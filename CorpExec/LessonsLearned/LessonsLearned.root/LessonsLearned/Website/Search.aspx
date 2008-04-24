@@ -78,7 +78,7 @@
                 <asp:ListBox  SelectionMode="Multiple" ID="lbDiscipline" TabIndex="80" runat="server" DataSource="<%# dvDiscipline %>" DataTextField="NAME" DataValueField="LL_DISCIPLINE_ID" style="Z-INDEX: 1; text-align: left; LEFT: 332px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px" ></asp:ListBox>
                 
                
-		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="498px" style="Z-INDEX: 1; text-align: left; LEFT: 12px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select multiple items in each box</asp:Label>
+		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="498px" style="Z-INDEX: 1; text-align: left; LEFT: 12px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select or un-select multiple items in each box</asp:Label>
 		        <asp:linkbutton ID="lnkAdvanced" runat="server" Font-Size="70%" Text="Advanced search" Width="118px" Height="15px" style="Z-INDEX: 1; text-align: left; LEFT: 518px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
 		        <asp:linkbutton ID="lnkAdvancedHide" runat="server" Font-Size="70%" Text="Hide advanced" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 516px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
 		         

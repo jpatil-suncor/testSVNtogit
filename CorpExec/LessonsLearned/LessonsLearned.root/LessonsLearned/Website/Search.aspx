@@ -78,9 +78,9 @@
                 <asp:ListBox  SelectionMode="Multiple" ID="lbDiscipline" TabIndex="80" runat="server" DataSource="<%# dvDiscipline %>" DataTextField="NAME" DataValueField="LL_DISCIPLINE_ID" style="Z-INDEX: 1; text-align: left; LEFT: 332px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px" ></asp:ListBox>
                 
                
-		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="498px" style="Z-INDEX: 1; text-align: left; LEFT: 12px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select or un-select multiple items in each box</asp:Label>
-		        <asp:linkbutton ID="lnkAdvanced" runat="server" Font-Size="70%" Text="Advanced search" Width="118px" Height="15px" style="Z-INDEX: 1; text-align: left; LEFT: 518px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
-		        <asp:linkbutton ID="lnkAdvancedHide" runat="server" Font-Size="70%" Text="Hide advanced" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 516px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
+		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="570px" style="Z-INDEX: 1; text-align: left; LEFT: 7px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select or un-select multiple items in each box</asp:Label>
+		        <asp:linkbutton ID="lnkAdvanced" runat="server" Font-Size="70%" Text="Advanced search" Width="118px" Height="15px" style="Z-INDEX: 1; text-align: left; LEFT: 588px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
+		        <asp:linkbutton ID="lnkAdvancedHide" runat="server" Font-Size="70%" Text="Hide advanced" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 588px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
 		         
 		        
 		   </asp:panel>
@@ -155,7 +155,7 @@
 
  <iframe id="thehideframe" src="" class="frmcls" style="display: none; width: 309px; height: 14px;"></iframe>
     
-     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 202px; width: 419px; top: 282px; height: 158px;" class="popup" id="search">
+     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 202px; width: 419px; top: 239px; height: 158px;" class="popup" id="search">
         Enter in Key words to generate a broad search for the topic or area you are interested in.  Use the filter screen feature to narrow your search to specific business units, categories or disciplines.  Further refine your search by using the advance search feature which will provide choices relating to processes, stages and project names
      </div>	
 </body>

@@ -364,11 +364,11 @@ namespace Website
 
             if (categoryids.Length > 0)
             {
-                lesson.StageIds = categoryids.Substring(0, categoryids.Length - 1).ToString();
+                lesson.CategoryIds = categoryids.Substring(0, categoryids.Length - 1).ToString();
             }
             else
             {
-                lesson.StageIds = "";
+                lesson.CategoryIds = "";
             }
 
             DataSet ds = lesson.SearchLessonsLearned();

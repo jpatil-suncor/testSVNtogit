@@ -393,84 +393,8 @@ namespace Backend.Business
         
         public override void Save()
         {
-
-            //IDbCommand cmd; // TODO: This implements the dispose pattern. It could be in a using block.
-            //cmd = InsertCommand;
-
-            //try
-            //{
-
-            //    ((IDbDataParameter)cmd.Parameters["userId"]).Value = CurrentUser;
-            //    if (Convert.IsDBNull(m_llId))
-            //    {
-            //        ((IDbDataParameter)cmd.Parameters["action"]).Value = "INSERT";
-            //        ((IDbDataParameter)cmd.Parameters["llId"]).Value = 0;
-            //    }
-            //    else
-            //    {
-            //        ((IDbDataParameter)cmd.Parameters["action"]).Value = "UPDATE";
-            //        ((IDbDataParameter)cmd.Parameters["llId"]).Value = m_llId;
-            //    }
-
-
-            //    ((IDbDataParameter)cmd.Parameters["statusId"]).Value                = StatusId;
-            //    ((IDbDataParameter)cmd.Parameters["userName"]).Value                = UserName.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["firstName"]).Value               = FirstName.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["lastName"]).Value                = LastName.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["phone"]).Value                   = Phone.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["location"]).Value                = Location.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["sbuid"]).Value                   = SBUId;
-            //    ((IDbDataParameter)cmd.Parameters["buid"]).Value                    = BUId;
-            //    ((IDbDataParameter)cmd.Parameters["projectId"]).Value               = ProjectId;
-            //    ((IDbDataParameter)cmd.Parameters["projectother"]).Value            = ProjectOther;
-
-            //    ((IDbDataParameter)cmd.Parameters["title"]).Value                   = Title.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["statement"]).Value               = Statement.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["background"]).Value              = Background.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["response"]).Value                = Response.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["comments"]).Value                = Comments.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["typeId"]).Value                  = TypeId;
-            //    ((IDbDataParameter)cmd.Parameters["impactId"]).Value                = ImpactId;
-            //    ((IDbDataParameter)cmd.Parameters["frequencyId"]).Value             = FrequencyId;
-
-            //    cmd.Transaction = cmd.Connection.BeginTransaction();
-            //    cmd.ExecuteNonQuery();
-
-            //    //Update our output parameters
-            //    LLId = ((IDbDataParameter)cmd.Parameters["llId"]).Value;
-
-            //    cmd.Transaction.Commit();
-            //}
-            //catch (System.Exception ex)
-            //{
-            //    if (cmd != null)
-            //    {
-            //        if (cmd.Transaction != null)
-            //        {
-            //            cmd.Transaction.Rollback();
-            //        }
-            //    }
-            //    else
-            //    {
-            //        System.ApplicationException newEx = new ApplicationException("Error in performing the update operation on: " +
-            //            "Lessons Learned", ex);
-            //        //Perculate our exception up the call stack.
-            //        throw newEx;
-            //    }
-            //}								
-            //finally
-            //{
-            //    if (cmd != null)
-            //    {
-            //        cmd.Connection.Close();
-            //        cmd.Connection.Dispose();
-            //        cmd.Dispose();
-            //    }
-            //} 
-           
+                      
         }
-
-       
 
         protected override IDbCommand SelectCommand
         {
@@ -489,41 +413,7 @@ namespace Backend.Business
 
         public void Delete()
         {
-            //IDbCommand cmd;
-            //cmd = DeleteCommand;
-            //try
-            //{
-            //    ((IDbDataParameter)cmd.Parameters["locId"]).Value = LocId.ToString();
-            //    ((IDbDataParameter)cmd.Parameters["UserId"]).Value = CurrentUser.ToString();
-                
-            //    cmd.Transaction = cmd.Connection.BeginTransaction();
-            //    cmd.ExecuteNonQuery();
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    if (cmd != null)
-            //    {
-            //        if (cmd.Transaction != null)
-            //        {
-            //            cmd.Transaction.Rollback();
-            //        }
-            //        cmd.Dispose();
-            //    }
-            //    ApplicationException newEx = new ApplicationException("Error in performing the delete operation on: " +
-            //        "Letter Of Credit", ex);
-            //    throw newEx;
-            //}
-            //finally
-            //{
-            //    if (cmd != null)
-            //    {
-            //        cmd.Transaction.Commit();
-            //        cmd.Connection.Close();
-            //        cmd.Dispose();
-            //        cmd.Dispose();
-            //    }
-            //}
+         
         }
 
        
@@ -534,34 +424,6 @@ namespace Backend.Business
             {
                 IDbCommand cmd;
                 cmd = DBConnection.CreateCommand();
-
-                //CreateParameter(ref cmd,"userId",     ParameterDirection.Input,DbType.String,  "USER_ID");
-                //CreateParameter(ref cmd, "action", ParameterDirection.Input, DbType.String, "ACTION");
-                //CreateParameter(ref cmd, "llId", ParameterDirection.InputOutput, DbType.Decimal, "LL_ID");
-                //CreateParameter(ref cmd, "statusId", ParameterDirection.Input, DbType.Decimal, "STATUS_ID");
-                //CreateParameter(ref cmd, "userName", ParameterDirection.Input, DbType.String, "USER_NAME");
-                //CreateParameter(ref cmd, "firstName", ParameterDirection.Input, DbType.String, "FIRST_NAME");
-                //CreateParameter(ref cmd, "lastName", ParameterDirection.Input, DbType.String, "LAST_NAME");
-                //CreateParameter(ref cmd, "phone", ParameterDirection.Input, DbType.String, "PHONE");
-
-                //CreateParameter(ref cmd, "location", ParameterDirection.Input, DbType.String, "LOCATION");
-                //CreateParameter(ref cmd, "sbuid", ParameterDirection.Input, DbType.Decimal, "SBU_ID");
-                //CreateParameter(ref cmd, "buid", ParameterDirection.Input, DbType.Decimal, "BU_ID");
-                //CreateParameter(ref cmd, "projectId", ParameterDirection.Input, DbType.Decimal, "PROJECT_ID");
-                //CreateParameter(ref cmd, "projectother", ParameterDirection.Input, DbType.String, "PROJECT_OTHER");
-
-                //CreateParameter(ref cmd, "title", ParameterDirection.Input, DbType.String, "TITLE");
-                //CreateParameter(ref cmd, "statement", ParameterDirection.Input, DbType.String, "STATEMENT");
-                //CreateParameter(ref cmd, "background", ParameterDirection.Input, DbType.String, "BACKGROUND");
-                //CreateParameter(ref cmd, "response", ParameterDirection.Input, DbType.String, "RESPONSE");
-
-                //CreateParameter(ref cmd, "comments", ParameterDirection.Input, DbType.String, "COMMENTS");
-                //CreateParameter(ref cmd, "typeId", ParameterDirection.Input, DbType.Decimal, "TYPE_ID");
-                //CreateParameter(ref cmd, "impactId", ParameterDirection.Input, DbType.Decimal, "IMPACT_ID");
-                //CreateParameter(ref cmd, "frequencyId", ParameterDirection.Input, DbType.Decimal, "FREQUENCY_ID");
-
-                //cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.CommandText = "LL_POTENTIAL_PKG.LL_POTENTIAL_SAVE";
 
                 return cmd;
             }
@@ -654,48 +516,6 @@ namespace Backend.Business
             ICustomDataAdapter da = DataAccess.GetCustomDataAdapter();
             DataSet results = new DataSet();  //make sure we use a loosely typed dataset as there will be more columns returned than just from the hedge table
 
-            //IDbCommand cmd;
-            //IDbDataParameter param;
-
-            ////cmd = SelectDetailsByPkCommand;
-            ////param = (IDbDataParameter)cmd.Parameters["locId"];
-            ////param.Value = locId;
-
-            ////param = (IDbDataParameter)cmd.Parameters["UserId"];
-            ////param.Value = CurrentUser;
-          
-            //try
-            //{
-            //    da.SelectCommand = cmd;
-            //    da.Fill(results);
-            //}
-            //catch (Exception ex)
-            //{
-            //    //If we get an error opening the result for the stored
-            //    //procedure, we likely have a a farily major problem.  
-            //    //Permissions issues or something of the kind.  We will
-            //    //percolate the call back up the stack so the front end
-            //    //may report it and thus the user can log the error
-            //    //for repair.
-            //    throw ex;
-            //}
-            //finally
-            //{
-            //    if (cmd != null)
-            //    {
-            //        cmd.Connection.Close();
-            //        cmd.Connection.Dispose();
-            //        cmd.Dispose();
-            //        cmd = null;
-            //    }
-
-            //    if (da != null)
-            //    {
-            //        da.Dispose();
-            //        da = null;
-            //    }
-            //}
-
             return results;
         }
 
@@ -727,7 +547,7 @@ namespace Backend.Business
             ((IDbDataParameter)cmd.Parameters["pprocessids"]).Value     = ProcessIds.ToString();
             ((IDbDataParameter)cmd.Parameters["pdisciplineids"]).Value  = DisciplineIds.ToString();
             ((IDbDataParameter)cmd.Parameters["pstageids"]).Value       = StageIds.ToString();
-            ((IDbDataParameter)cmd.Parameters["pcategoryids"]).Value    = StageIds.ToString();
+            ((IDbDataParameter)cmd.Parameters["pcategoryids"]).Value    = CategoryIds.ToString();
 
             try
             {
@@ -870,23 +690,7 @@ namespace Backend.Business
                 cmd = DBConnection.CreateCommand();
 
                 param = (IDbDataParameter)cmd.CreateParameter();
-                param.DbType = DbType.String;
-                param.ParameterName = "UserId";
-                param.Direction = ParameterDirection.Input;
-                param.SourceColumn = "USER_ID";
-                param.DbType = DbType.String;
-                cmd.Parameters.Add(param);
-
-                param = (IDbDataParameter)cmd.CreateParameter();
-                param.DbType = DbType.Decimal;
-                param.ParameterName = "locId";
-                param.Direction = ParameterDirection.Input;
-                param.SourceColumn = "LOC_ID";
-                param.DbType = DbType.Decimal;
-                cmd.Parameters.Add(param);
-
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "PKG_LETTEROFCREDIT.SP_GET_LOC";
+              
                 return cmd;
             }
         }
@@ -903,8 +707,6 @@ namespace Backend.Business
 
                 cmd = DBConnection.CreateCommand();
                
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "PKG_LETTEROFCREDIT.LOC_SEARCH";
 
                 return cmd;
             }

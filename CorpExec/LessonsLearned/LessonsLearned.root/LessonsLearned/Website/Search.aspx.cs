@@ -404,7 +404,9 @@ namespace Website
         {
             SortGrid(e.SortExpression);
             dvSearch = DataViewGridSource;
+            dgSearch.DataSource = DataViewGridSource;
             dgSearch.DataBind();
+            dgSearch.Visible = true;
         }
         protected void lnkBUAll_Click(object sender, EventArgs e)
         {

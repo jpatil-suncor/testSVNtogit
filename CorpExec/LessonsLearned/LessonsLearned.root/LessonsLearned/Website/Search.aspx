@@ -89,7 +89,7 @@
 		        <asp:Label ID="Label1" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="106px" style="Z-INDEX: 1; text-align: left; LEFT: 495px; POSITION: absolute; TOP: 225px">Process:</asp:Label>
                 <asp:ListBox  SelectionMode="Multiple" ID="lbProcess" runat="server" TabIndex="60" DataSource="<%# dvProcess %>" DataTextField="NAME" DataValueField="LL_SUBJECT_MATTER_ID" style="Z-INDEX: 1; text-align: left; LEFT: 494px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px"></asp:ListBox>
                 
-		        <asp:Label ID="Label5" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="106px" style="Z-INDEX: 1; text-align: left; LEFT: 657px; POSITION: absolute; TOP: 225px">Stages:</asp:Label>
+		        <asp:Label ID="Label5" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="106px" style="Z-INDEX: 1; text-align: left; LEFT: 657px; POSITION: absolute; TOP: 225px">Phases:</asp:Label>
                 <asp:ListBox  SelectionMode="Multiple" ID="lbStages" TabIndex="70" runat="server" DataSource="<%# dvStages %>" DataTextField="NAME" DataValueField="LL_PROJECT_STAGE_ID" style="Z-INDEX: 1; text-align: left; LEFT: 653px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px"></asp:ListBox>
                 
                 <asp:Label ID="Label28" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="105px" style="Z-INDEX: 1; text-align: left; LEFT: 816px; POSITION: absolute; TOP: 225px">Project Name:</asp:Label>
@@ -133,7 +133,7 @@
 								<asp:BoundColumn HeaderText="Categories" Sortexpression="CATEGORIES" DataField="CATEGORIES" ></asp:BoundColumn>								
 								<asp:BoundColumn HeaderText="Disciplines" Sortexpression="DISCIPLINES" DataField="DISCIPLINES" ></asp:BoundColumn>								
 								<asp:BoundColumn HeaderText="Processes" Sortexpression="PROCESSES" DataField="PROCESSES" ></asp:BoundColumn>
-								<asp:BoundColumn HeaderText="Stages" Sortexpression="STAGES" DataField="STAGES" ></asp:BoundColumn>
+								<asp:BoundColumn HeaderText="Phases" Sortexpression="STAGES" DataField="STAGES" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Procedure Change" Sortexpression="PROCEDURE_CHANGE" DataField="PROCEDURE_CHANGE" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Bulletin Sent" Sortexpression="BULLETIN_SENT" DataField="BULLETIN_SENT" ></asp:BoundColumn>
 						    </COLUMNS>

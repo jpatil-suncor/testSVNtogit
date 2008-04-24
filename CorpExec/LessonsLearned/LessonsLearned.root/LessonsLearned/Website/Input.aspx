@@ -261,7 +261,7 @@ function ValidatorOnLoad() {
                                 <asp:CheckBox ID="chkSelection" Runat="server" />
                             </ItemTemplate>
                     </asp:TemplateColumn>
-                    <asp:BoundColumn Visible=true HeaderText="Project_Stage" HeaderStyle-Width="15px" SortExpression="NAME" DataField="NAME"></asp:BoundColumn>
+                    <asp:BoundColumn Visible=true HeaderText="Project_Phase" HeaderStyle-Width="15px" SortExpression="NAME" DataField="NAME"></asp:BoundColumn>
 					</COLUMNS>
 	            </asp:datagrid>	 
 	          

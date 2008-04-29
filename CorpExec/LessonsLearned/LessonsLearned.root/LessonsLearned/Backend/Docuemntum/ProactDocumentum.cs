@@ -16,6 +16,7 @@ namespace Backend.Documentum
         protected string m_docBase =        ConfigurationManager.AppSettings["DocBase"];
         protected string m_docbrokerhost =  ConfigurationManager.AppSettings["DocBrokerHost"];
         protected int m_docbrokerport =     Convert.ToInt32(ConfigurationManager.AppSettings["DocBrokerPort"]);
+        protected string m_acl =            ConfigurationManager.AppSettings["DocumentumACL"];
 		protected DocumentumAuthentication m_documentumLogin = null;
 		private object m_username = null;
 		private object m_password = null;
@@ -377,8 +378,8 @@ namespace Backend.Documentum
 		{
 			string sFileName = string.Empty;
 			string sNewFile = string.Empty;
-			string sACL = "pcproactacl";
-
+            string sACL = m_acl.ToString();
+            //pcproactacl
 			try
 			{
 				if (m_code != null)

@@ -326,6 +326,13 @@ namespace Website
                 this.panel1.Visible = true;
                 this.btnBack.Enabled = false;
                 this.btnNext.Enabled = true;
+
+                //if (Session[Global.Parameters.File3].ToString() != "")
+                //{
+                //    FileUpload3 = (FileUpload)Session[Global.Parameters.File3];
+                //}
+
+
             }
         }
 
@@ -339,32 +346,32 @@ namespace Website
                 this.btnNext.Enabled = false;
                 this.btnSave.Enabled = true;
 
-                if (FileUpload3.HasFile)
-                {
-                    //store this file in session as we lose it going from page to page
-                    Session.Add(Global.Parameters.File3, FileUpload3);
-                    String tempFile3 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
-                    tempFile3 = tempFile3 + "\\" + FileUpload3.FileName.ToString();
-                    Session.Add(Global.Parameters.tempFile3, tempFile3.ToString());
-                    FileUpload3.SaveAs(tempFile3);                    
-                }
-                else
-                {
-                    Session.Add(Global.Parameters.File3, "");
-                }
-                if (FileUpload4.HasFile)
-                {
-                    //store this file in session as we lose it going from page to page
-                    Session.Add(Global.Parameters.File4, FileUpload4);
-                    String tempFile4 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
-                    tempFile4 = tempFile4 + "\\" + FileUpload4.FileName.ToString();
-                    Session.Add(Global.Parameters.tempFile4, tempFile4.ToString());
-                    FileUpload4.SaveAs(tempFile4);
-                }
-                else
-                {
-                    Session.Add(Global.Parameters.File4, "");
-                }
+                //if (FileUpload3.HasFile)
+                //{
+                //    //store this file in session as we lose it going from page to page
+                //    Session.Add(Global.Parameters.File3, FileUpload3);
+                //    String tempFile3 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
+                //    tempFile3 = tempFile3 + "\\" + FileUpload3.FileName.ToString();
+                //    Session.Add(Global.Parameters.tempFile3, tempFile3.ToString());
+                //    FileUpload3.SaveAs(tempFile3);                    
+                //}
+                //else
+                //{
+                //    Session.Add(Global.Parameters.File3, "");
+                //}
+                //if (FileUpload4.HasFile)
+                //{
+                //    //store this file in session as we lose it going from page to page
+                //    Session.Add(Global.Parameters.File4, FileUpload4);
+                //    String tempFile4 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
+                //    tempFile4 = tempFile4 + "\\" + FileUpload4.FileName.ToString();
+                //    Session.Add(Global.Parameters.tempFile4, tempFile4.ToString());
+                //    FileUpload4.SaveAs(tempFile4);
+                //}
+                //else
+                //{
+                //    Session.Add(Global.Parameters.File4, "");
+                //}
             }
         }
 
@@ -437,7 +444,7 @@ namespace Website
                         panel1controlsAreValid = false;
                     }
 
-                    if (ddlBU.SelectedIndex != -1)
+                    if (ddlBU.SelectedIndex != -1 && ddlBU.SelectedIndex != 0)
                     {
                         try
                         {
@@ -454,14 +461,14 @@ namespace Website
                         panel1controlsAreValid = false;
                     }
 
-                    if (ddlProject.SelectedIndex != -1 || txtOther.Text.ToString() != "")
+                    if ((ddlProject.SelectedIndex != -1 && ddlProject.SelectedIndex != 0) || txtOther.Text.ToString() != "")
                     {
                         if (txtOther.Text.ToString() != "")
                         {
                             LL.ProjectOther = txtOther.Text.ToString();
                         }
 
-                        if (ddlProject.SelectedIndex != -1)
+                        if (ddlProject.SelectedIndex != -1 && ddlProject.SelectedIndex != 0)
                         {
                             try
                             {
@@ -475,7 +482,7 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please choose a Project or if not there, enter a value in the 'other' box. ");
+                        ValidationSummary1.AddErrorMessage("Please choose a Project Name or if not there, enter a value in the 'other' box. ");
                         panel1controlsAreValid = false;
                     }
 
@@ -485,7 +492,7 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please enter a Title less then 50 characters. ");
+                        ValidationSummary1.AddErrorMessage("Please enter a Title less then 100 characters. ");
                         panel1controlsAreValid = false;
                     }
 
@@ -495,7 +502,7 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please enter a Statement less then 100 characters. ");
+                        ValidationSummary1.AddErrorMessage("Please enter a Statement less then 300 characters. ");
                         panel1controlsAreValid = false;
                     }
                     
@@ -576,13 +583,13 @@ namespace Website
                         panel1controlsAreValid = false;
                     }
 
-                    if (txtRecommendations.Text.ToString() != "" || txtRecommendations.Text.Length < 500)
+                    if (txtRecommendations.Text.ToString() != "")
                     {
                         LL.Response = txtRecommendations.Text.ToString();
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Recommendations must be less then 500 characters. ");
+                        ValidationSummary1.AddErrorMessage("Please enter a Recommendations less then 500 characters. ");
                         panel1controlsAreValid = false;
                     }
 
@@ -619,7 +626,7 @@ namespace Website
 
                     if (!stagesValid)
                     {
-                        ValidationSummary1.AddErrorMessage("Must pick at least one Project Stage. ");
+                        ValidationSummary1.AddErrorMessage("Must pick at least one Project Phase. ");
                         panel2controlsAreValid = false;
                     }
 
@@ -697,29 +704,36 @@ namespace Website
                                 }
                             }
                            //Session[Global.Parameters.AmendViewEdit].ToString()
-                            if (Session[Global.Parameters.File3].ToString() != "")
+                            //if (Session[Global.Parameters.File3].ToString() != "")
+                            if (txtFile1.Text.ToString() != "")
                             {
                                 FileUpload3 = (FileUpload)Session[Global.Parameters.File3];
                                 Session.Remove(Global.Parameters.File3);
+
+                                if (FileUpload3.HasFile)
+                                {
+                                    String fileName = (String)Session[Global.Parameters.tempFile3];
+                                    UploadtoDocumentum("Save From the WEB", fileName, FileUpload3.FileName, LL_ID.ToString());
+                                    Session.Remove(Global.Parameters.tempFile3);
+                                }
                             }
-                            if (FileUpload3.HasFile)
-                            {
-                                String fileName = (String)Session[Global.Parameters.tempFile3];
-                                UploadtoDocumentum("Save From the WEB", fileName, FileUpload3.FileName, LL_ID.ToString());
-                                Session.Remove(Global.Parameters.tempFile3);
-                            }
-                            if (Session[Global.Parameters.File4].ToString() != "")
+                            
+
+                            //if (Session[Global.Parameters.File4].ToString() != "")
+                            if (txtFile2.Text.ToString() != "")
                             {
                                 FileUpload4 = (FileUpload)Session[Global.Parameters.File4];
                                 Session.Remove(Global.Parameters.File4);
+
+                                if (FileUpload4.HasFile)
+                                {
+                                    String fileName = (String)Session[Global.Parameters.tempFile4];
+                                    UploadtoDocumentum("Save From the WEB", fileName, FileUpload4.FileName, LL_ID.ToString());
+                                    Session.Remove(Global.Parameters.tempFile4);
+                                }
                             }
 
-                            if (FileUpload4.HasFile)
-                            {
-                                String fileName = (String)Session[Global.Parameters.tempFile4];
-                                UploadtoDocumentum("Save From the WEB", fileName, FileUpload4.FileName, LL_ID.ToString());
-                                Session.Remove(Global.Parameters.tempFile4);
-                            }
+                           
                             //using the Error msg to confirm the Save.
                             ValidationSummary1.AddErrorMessage("Thank you, your info has been successfully submitted to the Lesson Learned Coordinator. ");
                             //Cleare all fields and return to first page.
@@ -820,6 +834,71 @@ namespace Website
         {
             Response.Redirect("ExcelInput.aspx");
         }
+
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
+            if (FileUpload3.HasFile)
+            {
+                if (txtFile1.Text.ToString() == "")
+                {
+                    //Add file to text box 1 and session
+                    Session.Add(Global.Parameters.File3, FileUpload3);
+                    String tempFile3 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
+                    tempFile3 = tempFile3 + "\\" + FileUpload3.FileName.ToString();
+                    Session.Add(Global.Parameters.tempFile3, tempFile3.ToString());
+                    FileUpload3.SaveAs(tempFile3);
+                    txtFile1.Text = FileUpload3.FileName.ToString();
+                }
+                else
+                {
+                    if (txtFile2.Text.ToString() == "")
+                    {
+                        //Add file to text box 2 and session
+                        Session.Add(Global.Parameters.File4, FileUpload3);
+                        String tempFile4 = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
+                        tempFile4 = tempFile4 + "\\" + FileUpload3.FileName.ToString();
+                        Session.Add(Global.Parameters.tempFile4, tempFile4.ToString());
+                        FileUpload3.SaveAs(tempFile4);
+                        txtFile2.Text = FileUpload3.FileName.ToString();
+                    }
+                    else
+                    {
+                        //both files are full display error msg
+                        ValidationSummary1.AddErrorMessage("You file limit of 2 has been reached, please delete a file before uploading another. ");
+                    }
+                }
+            }
+            else
+            {
+                ValidationSummary1.AddErrorMessage("You must Browse to your file before uploading. ");                            
+            }
+        }
+
+        protected void btnFile1_Click(object sender, EventArgs e)
+        {
+            if (txtFile1.Text.ToString() != "")
+            { 
+                //delete file name from text box and session
+                Session.Remove(Global.Parameters.File3);
+                System.IO.File.Delete(Session[Global.Parameters.tempFile3].ToString());
+                Session.Remove(Global.Parameters.tempFile3);
+                txtFile1.Text = "";
+            }
+        }
+
+        protected void btnFile2_Click(object sender, EventArgs e)
+        {
+            if (txtFile2.Text.ToString() != "")
+            {
+                //delete file name from text box and session
+                Session.Remove(Global.Parameters.File4);
+                System.IO.File.Delete(Session[Global.Parameters.tempFile4].ToString());
+                Session.Remove(Global.Parameters.tempFile4);
+                txtFile2.Text = "";
+            }
+        }
+
+       
        
     }
 }

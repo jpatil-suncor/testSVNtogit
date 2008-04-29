@@ -87,7 +87,7 @@
 		   
 		   <asp:panel id="panel2" Visible="false" runat=server >     
 		        <asp:Label ID="Label1" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="106px" style="Z-INDEX: 1; text-align: left; LEFT: 495px; POSITION: absolute; TOP: 225px">Process:</asp:Label>
-                <asp:ListBox  SelectionMode="Multiple" ID="lbProcess" runat="server" TabIndex="60" DataSource="<%# dvProcess %>" DataTextField="NAME" DataValueField="LL_SUBJECT_MATTER_ID" style="Z-INDEX: 1; text-align: left; LEFT: 494px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px"></asp:ListBox>
+                <asp:ListBox  SelectionMode="Multiple"  ID="lbProcess" runat="server" TabIndex="60" DataSource="<%# dvProcess %>" DataTextField="NAME" DataValueField="LL_SUBJECT_MATTER_ID" style="Z-INDEX: 1; text-align: left; LEFT: 494px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px"></asp:ListBox>
                 
 		        <asp:Label ID="Label5" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Width="106px" style="Z-INDEX: 1; text-align: left; LEFT: 657px; POSITION: absolute; TOP: 225px">Phases:</asp:Label>
                 <asp:ListBox  SelectionMode="Multiple" ID="lbStages" TabIndex="70" runat="server" DataSource="<%# dvStages %>" DataTextField="NAME" DataValueField="LL_PROJECT_STAGE_ID" style="Z-INDEX: 1; text-align: left; LEFT: 653px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px"></asp:ListBox>
@@ -156,7 +156,7 @@
  <iframe id="thehideframe" src="" class="frmcls" style="display: none; width: 309px; height: 14px;"></iframe>
     
      <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 202px; width: 419px; top: 239px; height: 158px;" class="popup" id="search">
-        Enter in Key words to generate a broad search for the topic or area you are interested in.  Use the filter screen feature to narrow your search to specific business units, categories or disciplines.  Further refine your search by using the advance search feature which will provide choices relating to processes, stages and project names
+        Enter in Key words to generate a broad search for the topic or area you are interested in.  Use the filter screen feature to narrow your search to specific business units, categories or disciplines.  Further refine your search by using the advance search feature which will provide choices relating to processes, phases and project names
      </div>	
 </body>
 </html>

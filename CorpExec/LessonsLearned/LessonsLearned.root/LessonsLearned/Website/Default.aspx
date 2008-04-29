@@ -163,7 +163,7 @@
                  <span style="font-size: 9pt">(<a href="Documents/LLHomePgOverview.ppt">LL Overview</a>
                      or <a href="Documents/TLM Moment LL2.0.ppt">TLM Moment</a>)</span></td>
              <td style="text-align: center; height: 14px; width: 240px;">
-                 <span style="font-size: 9pt">(<a href="Documents/LLWorkshopFinalKit.ppt">Powerpoint
+                 <span style="font-size: 9pt">(<a href="Documents/LLWorkshopFinalKit.ppt">PowerPoint
                      Workshop Kit</a> and <a href="Documents/OSP LL FINAL MS EXCEL WORKBOOK .xls"> Excel Workbook/templates
                  </a>)</span></td>             
          </tr>

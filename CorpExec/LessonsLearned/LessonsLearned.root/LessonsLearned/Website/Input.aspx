@@ -221,10 +221,21 @@ function ValidatorOnLoad() {
             <asp:Label ID="Label10" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 650px; " Font-Bold="false" Font-Size="85%" Width="500px">File Attachments:</asp:Label>
             <asp:Image ID="imgFileUpload" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 148px;  position: absolute; top: 650px; " />               
             
-	        <asp:Label ID="Label15" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 675px; " Font-Bold="false" Font-Size="85%" Width="125px">Document 1:</asp:Label>
-	        <asp:FileUpload ID="FileUpload3"  EnableViewState=true runat="server" Width="450px" style="z-index: 101;  left: 166px; position: absolute; top: 675px; " />
- 	        <asp:Label ID="Label20" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 700px; " Font-Bold="false" Font-Size="85%" Width="125px">Document 2:</asp:Label>
-            <asp:FileUpload ID="FileUpload4" EnableViewState=true runat="server" Width="450px" style="z-index: 101;  left: 166px; position: absolute; top: 700px; " />
+	        <asp:Label ID="Label15" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 675px; " Font-Bold="false" Font-Size="85%" Width="125px">Documents:</asp:Label>
+	        <asp:Label ID="Label20" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 700px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">1)</asp:Label>
+            <asp:TextBox ID="txtFile1" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 700px; "/>            	        
+            <asp:button id="btnFile1" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 700px; " OnClick="btnFile1_Click" />
+            
+            <asp:Label ID="Label21" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 725px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">2)</asp:Label>
+	        <asp:TextBox ID="txtFile2" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 725px; "/>            	        
+	        <asp:button id="btnFile2" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 725px; " OnClick="btnFile2_Click" />	       
+	        
+	        <asp:button id="btnUpload" runat=server text="Upload" causesvalidation=False style="z-index: 101;  left: 25px;  position: absolute; top: 750px; " OnClick="btnUpload_Click" />	       
+	        <asp:FileUpload ID="FileUpload3"  EnableViewState=true runat="server" Width="450px" style="z-index: 101;  left: 25px; position: absolute; top: 775px; " />
+	        <asp:FileUpload ID="FileUpload4" Visible=false  EnableViewState=true runat="server" Width="450px"/>
+            
+        
+        
               
               
               <cc1:ValidationSummary ID="ValidationSummary11" runat="server" CssClass="ErrorMessage" Height="74px" style="z-index: 101;  left: 510px;  position: absolute; top: 450px; ">
@@ -234,7 +245,7 @@ function ValidatorOnLoad() {
 	</asp:panel>
 	<asp:Panel id="panel2" Visible="false" runat=server >
 	    
-	        <asp:Label ID="Label17" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 150px; " Font-Bold="false" Font-Size="65%" Width="670px">Please indicate which processes, project stages and category's (optional) are affected by this Lesson.</asp:Label>
+	        <asp:Label ID="Label17" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 150px; " Font-Bold="false" Font-Size="65%" Width="670px">Please indicate which processes, project phase and category's (optional) are affected by this Lesson.</asp:Label>
     	    <asp:datagrid id=dgSubjectMatter runat="server" Font-Size="100%"  Height="25px" AutoGenerateColumns="False" AllowSorting="True" Width="200px" style="z-index: 101;  left: 25px; position: absolute; top: 175px; " >
 			    <ALTERNATINGITEMSTYLE CssClass="GridAlternatingItem"></ALTERNATINGITEMSTYLE>
 			    <ITEMSTYLE CssClass="GridItem"></ITEMSTYLE>

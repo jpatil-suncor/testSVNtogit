@@ -220,18 +220,18 @@ function ValidatorOnLoad() {
               
             <asp:Label ID="Label10" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 650px; " Font-Bold="false" Font-Size="85%" Width="500px">File Attachments:</asp:Label>
             <asp:Image ID="imgFileUpload" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 148px;  position: absolute; top: 650px; " />               
+	        <asp:Label ID="Label20" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 725px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">1)</asp:Label>
+            <asp:TextBox ID="txtFile1" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 725px; "/>            	        
+            <asp:button id="btnFile1" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 725px; " OnClick="btnFile1_Click" />
             
-	        <asp:Label ID="Label15" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 675px; " Font-Bold="false" Font-Size="85%" Width="125px">Documents:</asp:Label>
-	        <asp:Label ID="Label20" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 700px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">1)</asp:Label>
-            <asp:TextBox ID="txtFile1" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 700px; "/>            	        
-            <asp:button id="btnFile1" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 700px; " OnClick="btnFile1_Click" />
-            
-            <asp:Label ID="Label21" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 725px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">2)</asp:Label>
-	        <asp:TextBox ID="txtFile2" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 725px; "/>            	        
-	        <asp:button id="btnFile2" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 725px; " OnClick="btnFile2_Click" />	       
+            <asp:Label ID="Label21" runat="server" CssClass="fieldLabel" style="z-index: 101;  left: 25px;  position: absolute; top: 750px; " Font-Bold="False" Font-Size="85%" Width="20px" Height="21px">2)</asp:Label>
+	        <asp:TextBox ID="txtFile2" width="450px" Enabled="false" runat="server" style="z-index: 101;  left: 45px;  position: absolute; top: 750px; "/>            	        
+	        <asp:button id="btnFile2" runat=server text="del" causesvalidation=False style="z-index: 101;  left: 500px;  position: absolute; top: 750px; " OnClick="btnFile2_Click" />	       
 	        
-	        <asp:button id="btnUpload" runat=server text="Upload" causesvalidation=False style="z-index: 101;  left: 25px;  position: absolute; top: 750px; " OnClick="btnUpload_Click" />	       
-	        <asp:FileUpload ID="FileUpload3"  EnableViewState=true runat="server" Width="450px" style="z-index: 101;  left: 25px; position: absolute; top: 775px; " />
+	        <asp:button id="btnUpload" runat=server text="Upload" causesvalidation=False style="z-index: 101;  left: 25px;  position: absolute; top: 700px; " OnClick="btnUpload_Click" />	       
+	        <asp:FileUpload ID="FileUpload3"  EnableViewState=true runat="server" Width="450px" style="z-index: 101;  left: 25px; position: absolute; top: 675px; " />
+	        
+	        
 	        <asp:FileUpload ID="FileUpload4" Visible=false  EnableViewState=true runat="server" Width="450px"/>
             
         
@@ -325,7 +325,7 @@ function ValidatorOnLoad() {
         Please place your mouse over the 'i' icons for more information on that item.
     </div>
     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 39px; width: 438px; top: 454px;" class="popup" id="fileupload">
-        - only attach unique files that can not be accessed directly by the reader.  The Reference section above should outline how and where the reader can access additional pertinent information.
+        - only attach unique files that can not be accessed directly by the reader.  The Reference section above should outline how and where the reader can access additional pertinent information. Click on Browser, then Upload. Only 2 files can be uploaded.
     </div>
     
     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 39px; width: 438px; top: 454px;" class="popup" id="type">

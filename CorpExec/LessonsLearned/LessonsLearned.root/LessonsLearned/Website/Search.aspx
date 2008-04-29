@@ -57,7 +57,7 @@
 		
 		         <asp:Image ID="imgTitle" runat="server" ImageUrl="~/Images/LessonsLearnedSearch.gif" style="Z-INDEX: 113; text-align: center; LEFT: 357px; POSITION: absolute; TOP: 120px" Height="50px" Width="339px"  />
 		         <asp:Image ID="imgSearch" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 999;  left: 338px; position: absolute;  top: 171px; "  />	 
-		         <asp:TextBox ID="txtSearch" runat="server" Font-Size="70%" Height="20px" TabIndex="10" ToolTip="" Width="345px" style="Z-INDEX: 113; text-align: left; LEFT: 355px; POSITION: absolute; TOP: 171px"></asp:TextBox>
+		         <asp:TextBox ID="txtSearch" runat="server" Font-Size="70%" Height="20px" TabIndex="10" ToolTip="" Width="345px" style="Z-INDEX: 113; text-align: left; LEFT: 355px; POSITION: absolute; TOP: 171px" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
 		         <asp:linkbutton ID="lnkFilter" runat="server" Font-Size="70%" Text="Filter search" Width="118px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 703px; POSITION: absolute; TOP: 171px"  ></asp:LinkButton>
 		         <asp:linkbutton ID="lnkHideFilter" runat="server" Font-Size="70%" Text="Hide filter" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 703px; POSITION: absolute; TOP: 171px"  ></asp:LinkButton>
 		         <asp:button id="btnSearch" tabIndex="20" runat="server"  CssClass="Button" Font-Size="80%" Width="75px" Height="22px" ToolTip=""  style="Z-INDEX: 113; text-align: center; LEFT: 450px; POSITION: absolute; TOP: 195px" Text="Search"/>

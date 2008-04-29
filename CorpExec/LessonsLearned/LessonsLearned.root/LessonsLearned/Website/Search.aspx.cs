@@ -53,6 +53,7 @@ namespace Website
            // this.ddlSBU.SelectedIndexChanged += new EventHandler(ddlSBU_SelectedIndexChanged);
            // this.ddlBU.SelectedIndexChanged += new EventHandler(ddlBU_SelectedIndexChanged);
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             this.lnkFilter.Click += new EventHandler(lnkFilter_Click);
             this.lnkHideFilter.Click += new EventHandler(lnkHideFilter_Click);
             this.ButtonReset.Click += new System.EventHandler(this.ButtonReset_Click);
@@ -489,27 +490,11 @@ namespace Website
             return output;
         }
 
-        //private void dgSearch_ItemDataBound(object sender, System.Web.UI.WebControls.DataGridItemEventArgs e)
-        //{
-        //    //if (e.Item.ItemType == ListItemType.SelectedItem ||
-        //    //    e.Item.ItemType == ListItemType.Item ||
-        //    //    e.Item.ItemType == ListItemType.AlternatingItem)
-        //    //{
-        //    //    if (e.Item.ItemIndex == 0)
-        //    //    {
-        //    //        LinkButton b = (LinkButton)e.Item.FindControl("cmdEdit");
-        //    //        b.Visible = true;
-        //    //        //add the Amendment ID tosession to be able to query for the Fee Schedule.
-        //    //        Session.Add(Global.Parameters.AmenID, e.Item.Cells[2].Text);
-        //    //       // txtAmendID.Text = e.Item.Cells[2].Text;
-        //    //    }
-        //    //    else
-        //    //    {
-        //    //        LinkButton b = (LinkButton)e.Item.FindControl("cmdView");
-        //    //        b.Visible = true;
-        //    //    }
-        //    //}
-        //}
+        protected void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            this.btnSearch_Click(sender, e);
+
+        }
       
     }
 }

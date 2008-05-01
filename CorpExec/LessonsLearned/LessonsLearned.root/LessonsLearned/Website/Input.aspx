@@ -325,7 +325,7 @@ function ValidatorOnLoad() {
         Please place your mouse over the 'i' icons for more information on that item.
     </div>
     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 39px; width: 438px; top: 454px;" class="popup" id="fileupload">
-        - only attach unique files that can not be accessed directly by the reader.  The Reference section above should outline how and where the reader can access additional pertinent information. Click on Browser, then Upload. Only 2 files can be uploaded.
+        - only attach unique files that can not be accessed directly by the reader.  The Reference section above should outline how and where the reader can access additional pertinent information. Click on Browse…, select the file you would like to upload and then click on Upload.  Only 2 files can be uploaded.
     </div>
     
     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 39px; width: 438px; top: 454px;" class="popup" id="type">

@@ -56,6 +56,7 @@ namespace Website
 
             if (LANID != "")
             {
+                Session.Add(Global.Parameters.User, LANID);
                 // Retrieve First and Last name of user
                 User user = new User();
                 user.GetByPk(LANID);

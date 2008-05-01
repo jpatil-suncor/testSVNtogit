@@ -104,10 +104,10 @@ namespace Website
                 ntUser = this.Request.LogonUserIdentity.Name;
 
                 LANID = ntUser.Substring(ntUser.IndexOf("\\") + 1);
-                Session.Add(Global.Parameters.User, LANID);
-
+               
                 if (LANID != "")
                 {
+                    Session.Add(Global.Parameters.User, LANID);
                     // Retrieve First and Last name of user
                     User user = new User();
                     user.GetByPk(LANID);

@@ -177,8 +177,11 @@ namespace Website
 
             LANID = ntUser.Substring(ntUser.IndexOf("\\") + 1);
 
+            
+
             if (LANID != "")
-            { 
+            {
+                Session.Add(Global.Parameters.User, LANID);
                 // Retrieve First and Last name of user
                 User user = new User();
                 user.GetByPk(LANID);
@@ -421,10 +424,20 @@ namespace Website
                         panel1controlsAreValid = false;
                     }
 
-                    if (txtLocation.Text.ToString() != "")
+                    if (txtLocation.Text.ToString() != "" && txtLocation.Text.Length < 50)
                     {
                         LL.Location = txtLocation.Text.ToString();
                     }
+                    else
+                    {
+                        if (txtLocation.Text.Length > 50)
+                        {
+                            ValidationSummary1.AddErrorMessage("Location must be less then 50 characters.");
+                            panel1controlsAreValid = false;
+                        
+                        }
+                    }
+                    
 
                     if (ddlSBU.SelectedIndex != 0)
                     {
@@ -465,7 +478,15 @@ namespace Website
                     {
                         if (txtOther.Text.ToString() != "")
                         {
-                            LL.ProjectOther = txtOther.Text.ToString();
+                            if (txtOther.Text.Length < 81)
+                            {
+                                LL.ProjectOther = txtOther.Text.ToString();
+                            }
+                            else
+                            {
+                                ValidationSummary1.AddErrorMessage("Project Other must be 80 Characters or less. ");
+                                panel1controlsAreValid = false;
+                            }
                         }
 
                         if (ddlProject.SelectedIndex != -1 && ddlProject.SelectedIndex != 0)
@@ -527,7 +548,15 @@ namespace Website
                     {
                         if (txtTypeOther.Text.ToString() != "")
                         {
-                            LL.TypeOther = txtTypeOther.Text.ToString();
+                            if (txtTypeOther.Text.Length < 51)
+                            {
+                                LL.TypeOther = txtTypeOther.Text.ToString();
+                            }
+                            else
+                            {
+                                ValidationSummary1.AddErrorMessage("Type Other must be 50 Characters or less. ");
+                                panel1controlsAreValid = false;
+                            }
                         }
                         if (ddlType.SelectedIndex != 0)
                         {

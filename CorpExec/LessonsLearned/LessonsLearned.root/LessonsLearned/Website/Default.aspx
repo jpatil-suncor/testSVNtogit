@@ -14,7 +14,7 @@
     <meta name="Originator" content="Microsoft Visual Studio.NET 7.0">
     <script language="javascript">
         var bookmarkurl="http://corpweb-test/ll/Default.aspx"
-		var bookmarktitle="Lessons Learned (Test)"
+		var bookmarktitle="Lessons Learned"
 
 		function addbookmark()
 		{
@@ -160,8 +160,7 @@
              <td style="text-align: center; height: 14px; width: 240px;">
                  <span style="font-size: 9pt">(search the lessons learned database)</span></td>
              <td style="text-align: center; height: 14px; width: 240px;">
-                 <span style="font-size: 9pt">(<a href="Documents/LLHomePgOverview.ppt">LL Overview</a>
-                     or <a href="Documents/TLM Moment LL2.0.ppt">TLM Moment</a>)</span></td>
+                 <span style="font-size: 9pt">(<a href="Documents/LLNew User Orientation.ppt">LL New User Orientation)</span></td>
              <td style="text-align: center; height: 14px; width: 240px;">
                  <span style="font-size: 9pt">(<a href="Documents/LLWorkshopFinalKit.ppt">PowerPoint
                      Workshop Kit</a> and <a href="Documents/OSP LL FINAL MS EXCEL WORKBOOK .xls"> Excel Workbook/templates
@@ -170,15 +169,20 @@
        </table>
         <table style="z-index: 101; left: 20px; width: 100%; position: absolute; top: 852px; height: 1px; font-size: 9pt;">
          <tr>
-             <td style="text-align: center; ">
-                 <a href="javascript:addbookmark()">Add Lessons Learned to your bookmarks (TEST)</a> 
+             <td style="text-align: center; color: red;">
+                 <br />*<a href="mailto:ospll@petro-canada.ca?subject=Lessons Learned Question">Contact Lessons Learned Coordinator</a>
+                 <br />
+                 <br />
+                 *<a href="javascript:addbookmark()">Add Lessons Learned to your bookmarks</a> 
                      <br />
                 
              </td>
          </tr>
          <tr>
-            <td style="text-align: center; ">
-                 best viewed in 1024 x 768&nbsp; resolution</tr>
+            <td style="text-align: center; color: red;">
+                <span style="color: black">
+                Best viewed in 1024 x 768 resolution</span>
+         </tr>
             
     </table>        
     
@@ -188,12 +192,12 @@
 
     <iframe id="thehideframe" src="" class="frmcls" style="display: none; width: 309px; height: 14px;"></iframe>
     
-     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 26px; width: 224px; top: 927px; position: absolute; height: 158px;" class="popup" id="input">
+     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 43px; width: 224px; top: 1051px; position: absolute; height: 158px;" class="popup" id="input">
          1) An individual experiences a situation or event they believe is worth sharing
          with others - inputs information into LL system on-line for processing.<br />
          2) A Lessons Learned Workshop is held to capture lessons learned - input is captured
          in a standard LL summary template (MS Excel).</div>
-     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 251px; width: 668px; top: 916px; position: absolute; height: 84px;" class="popup" id="central">
+     <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 225px; width: 668px; top: 984px; position: absolute; height: 84px;" class="popup" id="central">
         <table >
             <tr>
                 <td style="width: 291px"><u>Lessons Learned Coordinator</u></td>
@@ -232,7 +236,7 @@
             </tr>
         </table>
     </div>
-    <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 273px; width: 217px; top: 920px; position: absolute; height: 158px;" class="popup" id="output">
+    <div onclick='event.cancelBubble = true;' style="z-index: 999; left: 356px; width: 217px; top: 1021px; position: absolute; height: 158px;" class="popup" id="output">
          Controlled, published changes - new or improved processes, specs, standards, procedures,
          etc. Lessons Learned Database
          <br />

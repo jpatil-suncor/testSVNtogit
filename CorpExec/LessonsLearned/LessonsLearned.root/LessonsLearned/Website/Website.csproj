@@ -100,6 +100,7 @@
     <Content Include="JavaScripts\utility.js" />
     <Content Include="LLStyles.css" />
     <None Include="Documents\LLHomePgOverview.ppt" />
+    <None Include="Documents\LLNew User Orientation.ppt" />
     <None Include="Documents\LLWorkshopFinalKit.ppt" />
     <None Include="Documents\OSP LL FINAL MS EXCEL WORKBOOK .xls" />
     <None Include="Documents\TLM Moment LL2.0.ppt" />

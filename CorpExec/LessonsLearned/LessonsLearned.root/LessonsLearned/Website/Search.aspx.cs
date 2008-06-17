@@ -257,10 +257,15 @@ namespace Website
                     //this Search string has only 1 entry and we need to add a space to the end of it
                     //for the SQL to work.
                     txtSearch.Text = txtSearch.Text.ToString() + " ";
-                }                
+                    lesson.KeyWords = txtSearch.Text.ToString();
+                }
+                else 
+                {
+                    lesson.KeyWords = txtSearch.Text.ToString() + " ";
+                }
             }
 
-            lesson.KeyWords = txtSearch.Text.ToString();
+            //lesson.KeyWords = txtSearch.Text.ToString();
             lesson.CurrentUser = LoginName;
 
             String buids = "";

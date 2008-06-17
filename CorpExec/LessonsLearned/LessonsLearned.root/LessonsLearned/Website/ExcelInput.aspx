@@ -50,12 +50,19 @@
         </tr>
     </table>
     
-    <asp:Label ID="Label9" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="174px" style="z-index: 101; position: absolute; left: 25px; top: 150px; " >Select Excel File:</asp:Label>
-    <asp:FileUpload ID="ExcelFile" runat=server Width="450px" style="z-index: 101;  left: 215px; position: absolute; top: 150px; " />
-    <asp:button id="btnInput" runat=server text="Input" style="z-index: 101;  left: 25px; position: absolute; top: 175px; " OnClick="btnInput_Click" />
+    <asp:Label ID="Label2" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="174px" style="z-index: 101; position: absolute; left: 25px; top: 133px; " >Tips for Uploading file:</asp:Label>
+    <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="661px" style="z-index: 101; position: absolute; left: 50px; top: 153px; " > - File Name Can be anything, worksheet name must be named "template" no spaces</asp:Label>
+    <asp:Label ID="Label4" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="863px" style="z-index: 101; position: absolute; left: 49px; top: 174px; " > - Column names must be these with no spaces: Number, Originator, Lesson Learned Title, Lesson Learned Statement, Additional Background, Recommendations, Priority, Impact, Type, Frequency, References</asp:Label>
     
-     <asp:Label ID="lblMsg" Text="" runat="server" style="z-index: 101;  left: 25px; position: absolute; top: 200px; " Height="93px" Width="644px"></asp:Label>
-    	<TABLE id="Table4" style="FONT-SIZE: 100%; Z-INDEX: 123; LEFT: 2px; POSITION: absolute; TOP: 300px" cellSpacing="1" cellPadding="1" border="0">
+
+    
+    <asp:Label ID="Label9" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="174px" style="z-index: 101; position: absolute; left: 25px; top: 250px; " >Select Excel File:</asp:Label>
+    <asp:FileUpload ID="ExcelFile" runat=server Width="450px" style="z-index: 101;  left: 215px; position: absolute; top: 250px; " />
+    <asp:button id="btnInput" runat=server text="Input" style="z-index: 101;  left: 25px; position: absolute; top: 275px; " OnClick="btnInput_Click" />
+    <asp:CheckBox ID="cbGrid" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%" Text="Check here to view Import results in Grid" style="z-index: 101;  left: 80px; position: absolute; top: 275px; " runat="server" Width="414px" />
+    
+     <asp:Label ID="lblMsg" Text="" runat="server" style="z-index: 101;  left: 25px; position: absolute; top: 300px; " Height="93px" Width="644px"></asp:Label>
+    	<TABLE id="Table4" style="FONT-SIZE: 100%; Z-INDEX: 123; LEFT: 2px; POSITION: absolute; TOP: 400px" cellSpacing="1" cellPadding="1" border="0">
 		
 				<TR>
 					<TD style="FONT-SIZE: 70%; HEIGHT: 1px" align="left" width="100%" colSpan="2" rowSpan="1">
@@ -72,12 +79,14 @@
 							<COLUMNS>
 							    <asp:BoundColumn HeaderText="Number" SortExpression="Number" DataField="Number"></asp:BoundColumn>
                                 <asp:BoundColumn HeaderText="Originator" SortExpression="Originator" DataField="Originator"></asp:BoundColumn>
-                                <asp:BoundColumn HeaderText="Lesson Learned Title" SortExpression="Lesson Learned Title" DataField="Lesson Learned Title_"></asp:BoundColumn>
+                                <asp:BoundColumn HeaderText="Lesson Learned Title" SortExpression="Lesson Learned Title" DataField="Lesson Learned Title"></asp:BoundColumn>
                                 <asp:BoundColumn HeaderText="Lesson Learned Statement" SortExpression="Lesson Learned Statement" DataField="Lesson Learned Statement"></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Additional Background" SortExpression="Additional Background" DataField="Additional Background" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Recommendations" Sortexpression="Recommendations" DataField="Recommendations" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Priority" Sortexpression="Priority" DataField="Priority" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="Impact" Sortexpression="Impact" DataField="Impact" ></asp:BoundColumn>
+								<asp:BoundColumn HeaderText="Type" Sortexpression="Type" DataField="Type" ></asp:BoundColumn>
+								<asp:BoundColumn HeaderText="Frequency" Sortexpression="Frequency" DataField="Frequency" ></asp:BoundColumn>
 								<asp:BoundColumn HeaderText="References" Sortexpression="References" DataField="References" ></asp:BoundColumn>
 						    </COLUMNS>
 					   </asp:datagrid>
@@ -90,6 +99,7 @@
 				</tr>
 			</TABLE>
        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+       
             
     </form>
 </body>

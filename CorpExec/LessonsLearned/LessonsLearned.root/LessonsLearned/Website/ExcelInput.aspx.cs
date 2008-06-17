@@ -111,7 +111,7 @@ namespace Website
                             ll.StatusId = 1; //This is to be in 'submitted' mode.
                             ll.UserName = LoginName;
 
-                            if ((dr["Lesson Learned Title_"].ToString() != "") && (dr["LESSON LEARNED STATEMENT"].ToString() != ""))
+                            if ((dr["Lesson Learned Title"].ToString() != "") && (dr["LESSON LEARNED STATEMENT"].ToString() != ""))
                             {
                                 try
                                 {
@@ -119,8 +119,10 @@ namespace Website
                                     com = com + "Originator: " + dr["ORIGINATOR"].ToString() + ", ";
                                     com = com + "Priority: " + dr["PRIORITY"].ToString() + ", ";
                                     com = com + "Impact: " + dr["IMPACT"].ToString() + ", ";
+                                    com = com + "Type: " + dr["TYPE"].ToString() + ", ";
+                                    com = com + "Frequency: " + dr["FREQUENCY"].ToString() + ", ";
                                     ll.Comments = com.ToString();
-                                    ll.Title = dr["Lesson Learned Title_"].ToString();
+                                    ll.Title = dr["Lesson Learned Title"].ToString();
                                     ll.Statement = dr["LESSON LEARNED STATEMENT"].ToString();
                                     ll.Background = dr["ADDITIONAL BACKGROUND"].ToString();
                                     ll.Response = dr["RECOMMENDATIONS"].ToString();
@@ -145,6 +147,14 @@ namespace Website
                             UploadtoDocumentum("Excel Input file", ExceltempFile.ToString(), ExcelFile.FileName.ToString(), Final_ll.ToString());
                             documentumFilename = ConfigurationManager.AppSettings["DocumentumCabinet"] + "/" + Final_ll.ToString() + "/" + ExcelFile.FileName.ToString();
                             this.lblMsg.Text = "You have successfully imported the Excel file. You have imported " + row_counter.ToString() + " rows. Your file has been saved in Documentum in the folder " + documentumFilename.ToString() + ".";
+
+                            if (this.cbGrid.Checked)
+                            {
+                                dgExcel.DataSource = ds;
+                                dgExcel.DataBind();
+                                dgExcel.Visible = true;
+                                Page.DataBind();
+                            }
                         }
                         else
                         {
@@ -152,11 +162,8 @@ namespace Website
                         }
 
 
-
-                        //dgExcel.DataSource = ds;
-                        //dgExcel.DataBind();
-                        //dgExcel.Visible = true;
-                        //Page.DataBind();
+                        
+                        
 
                         counter = "Y";
                     }

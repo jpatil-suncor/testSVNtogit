@@ -98,7 +98,7 @@ function ValidatorOnLoad() {
              <asp:Label ID="Label25" runat="server" CssClass="fieldLabel" Font-Bold="false" Font-Size="65%" Width="645px" style="z-index: 999;  left: 25px; position: absolute;  top: 129px; ">Fields in <B>bold</B> are mandatory and to view helpful information on that item, place your mouse over the <asp:Image ID="imgHelp" runat="server" ImageUrl="~/Images/info.gif"/> icons.</asp:Label>
 
 	          
-	         <asp:Label ID="Label9" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%"  Width="165px" style="z-index: 101; position: absolute; left: 25px; top: 150px; " >First Name:</asp:Label>
+	         <asp:Label ID="Label9" runat="server" CssClass="fieldLabel"  Font-Bold="True" Font-Size="75%"  Width="165px" style="z-index: 101; position: absolute; left: 25px; top: 150px; ">First Name:</asp:Label>
              <asp:TextBox ID="txtFirstName" runat="server" Font-Size="70%" Height="20px" TabIndex="10" ToolTip="" Width="145px" style="z-index: 101;  left: 150px; position: absolute; top: 150px; "></asp:TextBox>
              <asp:Label ID="Label1" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%" Width="165px" style="z-index: 101;  left: 25px; position: absolute; top: 175px; ">Last Name:</asp:Label>
              <asp:TextBox ID="txtLastName" runat="server" Font-Size="70%" Height="20px" TabIndex="20" ToolTip="" Width="145px" style="z-index: 101;  left: 150px; position: absolute; top: 175px; "></asp:TextBox>
@@ -175,10 +175,10 @@ function ValidatorOnLoad() {
              <asp:Label ID="Label22" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="35px" style="z-index: 101;  left: 800px; position: absolute;  top: 150px; " >other:</asp:Label>
              <asp:TextBox ID="txtTypeOther" runat="server" Font-Size="70%" Height="20px" TabIndex="60" ToolTip="" Width="135px" style="z-index: 101;  left: 835px; position: absolute; top: 150px; " ></asp:TextBox>
              
-             <asp:Label ID="Label6" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%" Width="125px" style="z-index: 101;  left: 510px; position: absolute; top: 175px; ">Impact:</asp:Label> 
+             <asp:Label ID="Label6" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%" Width="125px" style="z-index: 101;  left: 510px; position: absolute; top: 175px; ">Priority:</asp:Label> 
              <asp:Image ID="imgImpact" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 630px;  position: absolute; top: 175px; " />               
              <asp:DropDownList ID="ddlImpact" runat="server" TabIndex="120" Width="125px" style="z-index: 1;  left: 645px; position: absolute;  top: 175px; " DataSource="<%# dvImpact %>" DataTextField="NAME" DataValueField="LL_OCCURRENCE_IMPACT_ID" Font-Underline="False" ></asp:DropDownList>
-             <asp:Label ID="Label19" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="75%" Width="36px" style="z-index: 101;  left: 784px; position: absolute; text-align: right; top: 175px; ">K$:</asp:Label> 
+             <asp:Label ID="Label19" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="75%" Width="36px" style="z-index: 101;  left: 775px; position: absolute; text-align: right; top: 175px; ">Impact:</asp:Label> 
              <asp:Image ID="imgFinImpact" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 820px;  position: absolute; top: 175px; " />               
              <asp:DropDownList ID="ddlFinancialImpact" runat="server" TabIndex="120" Width="100px" style="z-index: 1;  left: 835px; position: absolute;  top: 175px; " DataSource="<%# dvFinancialImpact %>" DataTextField="NAME" DataValueField="LL_FINANCIAL_IMPACT_ID" Font-Underline="False" ></asp:DropDownList>
              

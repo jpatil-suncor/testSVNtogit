@@ -252,17 +252,17 @@ namespace Website
 
             if (txtSearch.Text.Length > 0)
             {
-                if (!txtSearch.Text.Contains(" "))
-                {
-                    //this Search string has only 1 entry and we need to add a space to the end of it
-                    //for the SQL to work.
-                    txtSearch.Text = txtSearch.Text.ToString() + " ";
-                    lesson.KeyWords = txtSearch.Text.ToString();
-                }
-                else 
-                {
-                    lesson.KeyWords = txtSearch.Text.ToString() + " ";
-                }
+                //if (!txtSearch.Text.Contains(" "))
+                //{
+                //    //this Search string has only 1 entry and we need to add a space to the end of it
+                //    //for the SQL to work.
+                //    //txtSearch.Text = txtSearch.Text.ToString() + " ";
+                //    lesson.KeyWords = txtSearch.Text.ToString() + " ";
+                //}
+                //else 
+                //{
+                lesson.KeyWords = txtSearch.Text.ToString() + " ";
+                //}
             }
 
             //lesson.KeyWords = txtSearch.Text.ToString();
@@ -499,8 +499,8 @@ namespace Website
 
         protected void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            this.btnSearch_Click(sender, e);
-
+            //this.btnSearch_Click(sender, e);
+         
         }
       
     }

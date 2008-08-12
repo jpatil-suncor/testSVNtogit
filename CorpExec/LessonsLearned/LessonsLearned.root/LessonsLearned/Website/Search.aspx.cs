@@ -397,7 +397,7 @@ namespace Website
                 sScript = "<script> " + sPathReport + "</script>";
                 this.RegisterStartupScript("START", sScript);
             }
-            if (dgi.Cells[2].Text.ToString() == "Reviewed")
+            if (dgi.Cells[2].Text.ToString() == "Unpublished")
             {
                 Session.Add(Global.Parameters.SubmittedFinal, "SUBMITTEDSEARCH");
                 sPathReport = "window.open('" + Global.ProcessingPage.ToString() + "?" + Global.Parameters.LL_ID + "=" + dgi.Cells[1].Text.ToString() + "');";

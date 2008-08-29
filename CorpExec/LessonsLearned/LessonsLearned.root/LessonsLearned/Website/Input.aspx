@@ -116,7 +116,7 @@ function ValidatorOnLoad() {
              <asp:Label ID="Label29" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="65%" Width="35px" style="z-index: 101; text-align: right; left: 25px; position: absolute; top: 325px; " >other:</asp:Label>
              <asp:TextBox ID="txtOther" runat="server" Font-Size="70%" Height="20px" TabIndex="60" ToolTip="" Width="150px" style="z-index: 101; left: 150px;  position: absolute; top: 325px; " ></asp:TextBox>
             
-             <asp:Label ID="Label30" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%" Width="165px" style="z-index: 101;  left: 25px; position: absolute; top: 350px; " >Title: </asp:Label>
+             <asp:Label ID="Label30" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="75%" Width="165px" style="z-index: 101;  left: 25px; position: absolute; top: 350px; " >Lesson Title: </asp:Label>
              <asp:Image ID="imgTitle" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 135px; position: absolute;  top: 350px; "  />
              <asp:TextBox ID="txtTitle" MaxLength=0 TextMode="MultiLine" CssClass="fieldLabel" Font-Bold="false" runat="server" Font-Size="75%" Height="60px" TabIndex="70" ToolTip="" Width="350px" style="z-index: 101;  left: 150px; position: absolute; top: 350px; " ></asp:TextBox>
         &nbsp;<cc3:MultiLineTextBoxValidator ID="MultiLineTextBoxValidator4" 

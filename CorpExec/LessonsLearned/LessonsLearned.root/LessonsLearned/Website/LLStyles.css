@@ -1,7 +1,75 @@
 body
 {
+    margin: 0; padding: 0; background-color: #FFFFFF;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px; 
+    color: #333333;
 }
+/**********************************************************************/
+/* TABLES                                                             */
+/**********************************************************************/	
+table{
+ 	border-collapse: collapse; font-size:12px;  }
+
+td{vertical-align:top;}
+
+table.tableOuter, table.tableNav
+{  border:0;
+    background-color: #FFFFFF;}
+	
+table.tableOuter{
+	width: 670px;} 	
+	
+table.tableNav, table.tableContent, table.tableWork, table.tableLearn, table.tableMan{
+	width: 664px;} 	
+
+table.tableContent{
+	background-image: url(images/bg_home.jpg);
+	background-repeat: no-repeat;
+}
+table.tableWork{
+	background-image: url(images/bg_work.jpg);
+	background-repeat: no-repeat;
+}
+table.tableLearn{
+	background-image: url(images/bg_learn.jpg);
+	background-repeat: no-repeat;
+}
+table.tableMan{
+	background-image: url(images/bg_man.jpg);
+	background-repeat: no-repeat;
+}
+/**********************************************************************/
+/* TEXT                                                               */
+/**********************************************************************/	
+
+.a{font-size: 12px; color: #4B4B4B; font-weight:normal;}
+.a:link{color: #329049; text-decoration: underline; font-weight:bold;} 
+.a:visited{color:#329049; text-decoration: underline; font-weight:bold;}
+.a:hover {color: #4B4B4B; text-decoration: none; font-weight:bold;}
+.a:active {color: #329049; text-decoration: underline;font-weight:bold;}
+
+
+.txtsm {font-size: 11px; color: #4B4B4B; font-weight:normal;}
+.txtsm a:link{color: #329049; text-decoration: underline; font-weight:bold;} 
+.txtsm a:visited{color:#329049; text-decoration: underline; font-weight:bold;}
+.txtsm a:hover {color: #4B4B4B; text-decoration: none; font-weight:bold;}
+.txtsm a:active {color: #329049; text-decoration: underline;font-weight:bold;}
+	
+/**********************************************************************/
+/* MISCELLANEOUS                                                      */
+/**********************************************************************/
+
+img {
+	border-width: 0;
+}
+.centerIt{
+margin-left: auto;
+margin-right: auto;
+text-align: center;}
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/	
 
 .navigationBar 
 {
@@ -178,19 +246,19 @@ body
 {
 	font-weight: bold;
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
+	
 }
 .textBox
 {
 	font-weight: normal;
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
+	
 }
 .fieldValueLabel
 {
 	font-weight: normal;
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
+	
 }
 .RuleSeparator
 {
@@ -204,7 +272,6 @@ body
 	background-color: Red;
 	font-weight: bold;
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
 }
 .GridFooter
 {
@@ -212,18 +279,15 @@ body
 	background-color: Red;
 	font-weight: bold;
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
 }
 .GridItem
 {
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
 	background-color: White;
 }
 .GridSelectedItem
 {
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
 	font-weight: bold;
 	background-color: Gray;
 	color: white;
@@ -231,14 +295,13 @@ body
 .GridAlternatingItem
 {
 	font-family: Verdana, Arial, Sans-Serif;
-	font-size: 70%;
 	background-color: Gainsboro;
 	color: Black;
 }
 .Button
 {
 	width: 105px;
-	font-size: 70%;
+	
 }
 .ErrorMessage
 {

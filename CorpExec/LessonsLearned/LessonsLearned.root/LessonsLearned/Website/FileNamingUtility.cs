@@ -185,7 +185,7 @@ namespace Website
             {
                 files = (ArrayList)session[SessionFileKey];
             }
-            catch (Exception ex) //The session object doesn't exist so there is nothing to delete
+            catch (Exception) //The session object doesn't exist so there is nothing to delete
             {
                 return success;
             }
@@ -196,7 +196,7 @@ namespace Website
                 {
                     File.Delete(filename.ToString());
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     //If a file fails to delete we will return appropriate flag
                     //(but there is probably not much we can do about it except

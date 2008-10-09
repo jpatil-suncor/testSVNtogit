@@ -87,7 +87,8 @@ namespace Website
             get
             {
                 EnterpriseAuthenticationWebService eaws = new EnterpriseAuthenticationWebService();
-                eaws.Url = System.Configuration.ConfigurationSettings.AppSettings["EAWSURL"];
+                //eaws.Url = System.Configuration.ConfigurationSettings.AppSettings["EAWSURL"];
+                eaws.Url = System.Configuration.ConfigurationManager.AppSettings["EAWSURL"];
 
                 return eaws;
             }

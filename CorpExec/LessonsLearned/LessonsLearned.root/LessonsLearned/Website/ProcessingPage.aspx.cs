@@ -120,7 +120,7 @@ namespace Website
                        Response.Close();
                    }
                }
-               catch (Exception ex)
+               catch (Exception)
                {
                    base.Render(writer);
                }
@@ -207,7 +207,7 @@ namespace Website
                         Response.Close();
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     base.Render(writer);
                 }

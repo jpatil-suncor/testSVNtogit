@@ -306,54 +306,9 @@ namespace Backend.Maintenance
 		{
             get
             {
-                IDbDataParameter param;
+               
                 IDbCommand cmd;
                 cmd = DBConnection.CreateCommand();
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "puserid";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "puserid";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "paction";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "paction";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "pid";
-                //param.Direction = ParameterDirection.InputOutput;
-                //param.SourceColumn = "pid";
-                //param.DbType = DbType.Decimal;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "pdescription";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "pdescription";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "pdeletedflag";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "pdeletedflag";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.ParameterName = "pauditcomments";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "pauditcomments";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.CommandText = "PKG_DIVISION.LOC_DIVISION_SAVE";
-
                 return cmd;
             }
 		}
@@ -401,25 +356,8 @@ namespace Backend.Maintenance
 			get
 			{
 				IDbCommand cmd; 
-				IDbDataParameter param;
-
 				cmd = DBConnection.CreateCommand();
-				
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.String;
-                //param.ParameterName = "puserId";
-                //param.Direction = ParameterDirection.Input;
-                //cmd.Parameters.Add(param);
-                
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.String;
-                //param.ParameterName = "pid";
-                //param.Direction = ParameterDirection.Input;
-                //cmd.Parameters.Add(param);
-				
-                //cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.CommandText = "PKG_DIVISION.SP_GET_DIVISION_DETAILS";
-				return cmd;						
+			   	return cmd;						
 			}
 		}
 		
@@ -455,12 +393,7 @@ namespace Backend.Maintenance
                 }
                 reader.Read();
 			
-                //m_divisionid            = reader["DIVISION_ID"];
-                //m_description           = reader["DESCRIPTION"];
-                //m_deleted               = reader["DELETED"];
-                //m_lastChangedBy         = reader["LAST_UPDATED_BY"];
-                //m_lastChangedDate       = reader["LAST_UPDATED_DATE"];
-                //m_pendingAuth           = reader["PENDINGAUTH"];
+              
             }
             catch(Exception ex)
             {

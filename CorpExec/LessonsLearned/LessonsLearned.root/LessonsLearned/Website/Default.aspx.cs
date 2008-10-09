@@ -27,7 +27,7 @@ namespace Website
         protected void Page_Load(object sender, EventArgs e)
         {
             UseNTLogin();
-            this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
+            //this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
             
         }
 
@@ -39,12 +39,12 @@ namespace Website
 
         private void InitializeComponent()
         {
-            this.imgInput.Attributes.Add("onmouseover", "showPopup('input', event);");
-            this.imgInput.Attributes.Add("onmouseout", "hideCurrentPopup();");
-            this.imgCentral.Attributes.Add("onmouseover", "showPopup('central', event);");
-            this.imgCentral.Attributes.Add("onmouseout", "hideCurrentPopup();");
-            this.imgOutput.Attributes.Add("onmouseover", "showPopup('output', event);");
-            this.imgOutput.Attributes.Add("onmouseout", "hideCurrentPopup();");
+            //this.imgInput.Attributes.Add("onmouseover", "showPopup('input', event);");
+            //this.imgInput.Attributes.Add("onmouseout", "hideCurrentPopup();");
+            //this.imgCentral.Attributes.Add("onmouseover", "showPopup('central', event);");
+            //this.imgCentral.Attributes.Add("onmouseout", "hideCurrentPopup();");
+            //this.imgOutput.Attributes.Add("onmouseover", "showPopup('output', event);");
+            //this.imgOutput.Attributes.Add("onmouseout", "hideCurrentPopup();");
         }
 
         private void UseNTLogin()

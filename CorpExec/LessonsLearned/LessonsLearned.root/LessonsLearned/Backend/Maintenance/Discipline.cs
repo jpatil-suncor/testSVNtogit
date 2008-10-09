@@ -306,7 +306,6 @@ namespace Backend.Maintenance
 		{
             get
             {
-                IDbDataParameter param;
                 IDbCommand cmd;
                 cmd = DBConnection.CreateCommand();
                
@@ -358,25 +357,11 @@ namespace Backend.Maintenance
 			get
 			{
 				IDbCommand cmd; 
-				IDbDataParameter param;
+				
 
 				cmd = DBConnection.CreateCommand();
 				
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.String;
-                //param.ParameterName = "puserId";
-                //param.Direction = ParameterDirection.Input;
-                //cmd.Parameters.Add(param);
-                
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.String;
-                //param.ParameterName = "pid";
-                //param.Direction = ParameterDirection.Input;
-                //cmd.Parameters.Add(param);
-				
-                //cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.CommandText = "PKG_DIVISION.SP_GET_DIVISION_DETAILS";
-				return cmd;						
+              	return cmd;						
 			}
 		}
 		

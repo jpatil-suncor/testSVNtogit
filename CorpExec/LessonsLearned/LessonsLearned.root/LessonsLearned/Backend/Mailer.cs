@@ -36,7 +36,7 @@ namespace Backend
 			///**** note the server must be set up here before we go into production
 			try
 			{
-                DataTable dt;
+               // DataTable dt;
                 ////EmailAddress address = new EmailAddress();
                 //string environment = ConfigurationManager.AppSettings["Environmnet"];
                 //string smtpServer = ConfigurationManager.AppSettings["ErrorEmailSmtpServer"];

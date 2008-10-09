@@ -29,13 +29,13 @@ namespace Website {
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
-        /// lblTitle control.
+        /// imgHeader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Image imgHeader;
         
         /// <summary>
         /// lblWelcome control.
@@ -45,33 +45,6 @@ namespace Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblWelcome;
-        
-        /// <summary>
-        /// A3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A3;
-        
-        /// <summary>
-        /// A1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
-        
-        /// <summary>
-        /// A2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2;
         
         /// <summary>
         /// imgTitle control.

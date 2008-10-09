@@ -14,41 +14,21 @@
 </head>		
 <body>
    <form id="Form1" method="post" runat="server">
-    
-      <div id="_headerImage2" class="headerImage">
-     <table id="Table1" style="z-index: 101; left: 8px; width: 100%; position: absolute;
-        top: 7px; height: 69px" cellspacing="1" cellpadding="0" width="571" border="0"
-        background=".\Images\banner4.gif">
-        <tr>
-            <td width="5%">
-                &nbsp;
-            </td>
-            <td width="95%">
-                <h2 align="center" class="BannerTitle" title="The Letters of Credit System">
-                    Lessons Learned <asp:Label ID="lblTitle" runat="server" CssClass="Banner Title"></asp:Label></h2>
-            </td>
-        </tr>
-     </table>
-     </div>  
-        
-     <table id="Table2" style="z-index: 101; left: 8px; width: 100%; position: absolute;
-        top: 75px; height: 1px" cellspacing="0" cellpadding="0" width="571" border="0"
-        background=".\Images\header_menu_bar.gif">
-        <tr>
-          <td>
-              <asp:Label ID="lblWelcome" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="85%" Width="304px"></asp:Label>
-          </td>
-          <td style="height: 24px; width: 96%;">
-                <table id="Table3" align="center" class="navigationMenuList" border="0" cellpadding="2" cellspacing="0" style="left: -127px; top: 0px">
-				 <tr>
-				    <td style="height: 23px" align="center" ><a id="A3" class="navigationLink" href="Default.aspx" title="" runat="server">Home</a></td>
-					<td style="height: 23px" align="center" ><a id="A1" class="navigationLink" href="Input.aspx" title="" runat="server">Input</a></td>
-					<td style="height: 23px" align="center" ><a id="A2" class="navigationLink" href="Search.aspx" title="" runat="server">Search</a></td>
-				</tr>   
-			    </table>
-            </td>
-        </tr>
-    </table>
+              
+     <script language="javascript" src="/LL/JavaScripts/imgSwap.js" type="text/javascript"></script>
+
+  
+	<!-- HEADER -->
+	<table class="tableOuter" align="center">
+	<tr><td>
+    <a href="Default.aspx"><img src="images/hdr_excel.jpg" alt="Lessons Learned Home Page"></a>
+	</td></tr>
+	<!-- WELCOME LABEL -->
+	<tr><td>
+     <asp:Label ID="lblWelcome" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="85%" ></asp:Label>            		
+	</td></tr>
+   </table>  
+          
     
     <asp:Label ID="Label2" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="174px" style="z-index: 101; position: absolute; left: 25px; top: 133px; " >Tips for Uploading file:</asp:Label>
     <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size="85%"  Width="661px" style="z-index: 101; position: absolute; left: 50px; top: 153px; " > - File Name Can be anything, worksheet name must be named "template" no spaces</asp:Label>
@@ -98,9 +78,6 @@
 				    </td>
 				</tr>
 			</TABLE>
-       <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-       
-            
     </form>
 </body>
 </html>

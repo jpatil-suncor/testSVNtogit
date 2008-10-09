@@ -52,7 +52,7 @@ namespace Website
                 this.exceltemplate.Visible = true;
             }
 
-            this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
+            //this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
             
 
            
@@ -782,7 +782,9 @@ namespace Website
                             Session.Add(Global.Parameters.SubmittedFinal, "SUBMITTED");
                             sPathReport = "window.open('" + Global.ProcessingPage.ToString() + "?" + Global.Parameters.LL_ID + "=" + LL_ID.ToString() + "');";
                             sScript = "<script> " + sPathReport + "</script>";
-                            this.RegisterStartupScript("START", sScript);
+                            this.ClientScript.RegisterStartupScript(this.GetType(), "START", sScript);
+                                                          
+                            //this.RegisterStartupScript("START", sScript);
 
                         }
                         else

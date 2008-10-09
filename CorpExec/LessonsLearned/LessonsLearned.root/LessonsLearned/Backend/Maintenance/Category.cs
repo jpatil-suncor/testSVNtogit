@@ -306,7 +306,7 @@ namespace Backend.Maintenance
 		{
             get
             {
-                IDbDataParameter param;
+               
                 IDbCommand cmd;
                 cmd = DBConnection.CreateCommand();
                
@@ -358,8 +358,7 @@ namespace Backend.Maintenance
 			get
 			{
 				IDbCommand cmd; 
-				IDbDataParameter param;
-
+				
 				cmd = DBConnection.CreateCommand();
 				
                 //param = (IDbDataParameter)cmd.CreateParameter();

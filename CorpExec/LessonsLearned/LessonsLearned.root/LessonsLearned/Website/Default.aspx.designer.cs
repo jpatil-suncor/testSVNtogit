@@ -29,13 +29,13 @@ namespace Website {
         protected global::System.Web.UI.HtmlControls.HtmlForm Form1;
         
         /// <summary>
-        /// lblTitle control.
+        /// imgHeader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.Image imgHeader;
         
         /// <summary>
         /// lblWelcome control.
@@ -47,13 +47,13 @@ namespace Website {
         protected global::System.Web.UI.WebControls.Label lblWelcome;
         
         /// <summary>
-        /// A3 control.
+        /// img3Rs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A3;
+        protected global::System.Web.UI.WebControls.Image img3Rs;
         
         /// <summary>
         /// A1 control.
@@ -63,59 +63,5 @@ namespace Website {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor A1;
-        
-        /// <summary>
-        /// A2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor A2;
-        
-        /// <summary>
-        /// imgInput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgInput;
-        
-        /// <summary>
-        /// imgOutput2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgOutput2;
-        
-        /// <summary>
-        /// imgCentral2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgCentral2;
-        
-        /// <summary>
-        /// imgCentral control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgCentral;
-        
-        /// <summary>
-        /// imgOutput control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgOutput;
     }
 }

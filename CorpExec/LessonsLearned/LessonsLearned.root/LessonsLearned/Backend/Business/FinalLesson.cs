@@ -435,28 +435,10 @@ namespace Backend.Business
             get
             {
                 IDbCommand cmd;
-                IDbDataParameter param;
-
+               
                 cmd = DBConnection.CreateCommand();
 
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.String;
-                //param.ParameterName = "UserId";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "USER_ID";
-                //param.DbType = DbType.String;
-                //cmd.Parameters.Add(param);
-
-                //param = (IDbDataParameter)cmd.CreateParameter();
-                //param.DbType = DbType.Decimal;
-                //param.ParameterName = "locId";
-                //param.Direction = ParameterDirection.Input;
-                //param.SourceColumn = "LOC_ID";
-                //param.DbType = DbType.Decimal;
-                //cmd.Parameters.Add(param);
-
-                //cmd.CommandType = CommandType.StoredProcedure;
-                //cmd.CommandText = "PKG_LETTEROFCREDIT.LOC_LETTEROFCREDIT_DELETE";
+               
                 return cmd;
             }
         }

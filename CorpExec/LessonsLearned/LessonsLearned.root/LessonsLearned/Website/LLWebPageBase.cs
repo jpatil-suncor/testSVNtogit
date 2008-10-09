@@ -371,7 +371,8 @@ namespace Website
 
             script.Append("  </script>");
 
-            Page.RegisterStartupScript("EnableControlsOnceLoaded", script.ToString());
+            //Page.RegisterStartupScript("EnableControlsOnceLoaded", script.ToString());
+            this.ClientScript.RegisterStartupScript(this.GetType(), "EnableControlsOnceLoaded", script.ToString());
         }
 
         /// <summary>
@@ -656,7 +657,9 @@ namespace Website
             startScript.Append("window.open(\"" + relativePathFilename + "\", ");
             startScript.Append("\"\",\"\")");
             startScript.Append("</script>");
-            Page.RegisterStartupScript("StartUp", startScript.ToString());
+            //Page.RegisterStartupScript("StartUp", startScript.ToString());
+            this.ClientScript.RegisterStartupScript(this.GetType(), "START", startScript.ToString());
+
         }
 
         protected void ExportDataSet(DataSet ds)

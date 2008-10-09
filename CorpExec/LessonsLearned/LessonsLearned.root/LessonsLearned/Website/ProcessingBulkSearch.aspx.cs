@@ -1,9 +1,6 @@
 using System;
 using System.Data;
 using System.Configuration;
-using System;
-using System.Data;
-using System.Configuration;
 using System.Collections;
 using System.Web;
 using System.Web.Security;
@@ -113,7 +110,7 @@ namespace Website
                     Response.Close();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 base.Render(writer);
             }

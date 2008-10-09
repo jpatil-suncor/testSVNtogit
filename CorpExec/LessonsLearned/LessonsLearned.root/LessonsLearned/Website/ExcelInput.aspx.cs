@@ -27,7 +27,7 @@ namespace Website
 
             }
             PopulateName();
-            this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
+            //this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
         }
 
         protected override void OnInit(EventArgs e)

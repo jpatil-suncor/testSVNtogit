@@ -1138,7 +1138,6 @@ namespace Backend.Business
         {
             get
             {
-                IDbDataParameter param;
                 IDbCommand cmd;
                 cmd = DBConnection.CreateCommand();
 

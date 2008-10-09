@@ -81,23 +81,53 @@
     <Content Include="ExcelInput.aspx" />
     <Content Include="GenericError.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\3Rs.jpg" />
+    <Content Include="images\3Rs_sm.jpg" />
     <Content Include="images\banner4.gif" />
+    <Content Include="images\bg_home.jpg" />
+    <Content Include="images\bg_learn.jpg" />
+    <Content Include="images\bg_work.jpg" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\buttNavOff_02.gif" />
+    <Content Include="images\buttNavOff_03.gif" />
+    <Content Include="images\buttNavOff_04.gif" />
+    <Content Include="images\buttNavOff_05.gif" />
+    <Content Include="images\buttNavOff_06.gif" />
+    <Content Include="images\buttNavOff_07.gif" />
+    <Content Include="images\buttNavOn_02.gif" />
+    <Content Include="images\buttNavOn_03.gif" />
+    <Content Include="images\buttNavOn_04.gif" />
+    <Content Include="images\buttNavOn_05.gif" />
+    <Content Include="images\buttNavOn_06.gif" />
+    <Content Include="images\buttNavOn_07.gif" />
     <Content Include="images\central_processing.bmp" />
     <Content Include="images\central_processing.bmp.jpg" />
+    <Content Include="images\hdr_contact.jpg" />
+    <Content Include="images\hdr_excel.jpg" />
+    <Content Include="images\hdr_input.jpg" />
+    <Content Include="images\hdr_learnMore.jpg" />
+    <Content Include="images\hdr_lessLearn.jpg" />
+    <Content Include="images\hdr_man.jpg" />
+    <Content Include="images\hdr_search.jpg" />
+    <Content Include="images\hdr_worksp.jpg" />
     <Content Include="images\header_menu_bar.gif" />
     <Content Include="images\info.gif" />
     <Content Include="images\input.JPG" />
     <Content Include="images\input_2.JPG" />
+    <Content Include="images\learnMore.jpg" />
     <Content Include="images\LessonsLearnedSearch.gif" />
     <Content Include="images\ll_whole_pic.JPG" />
     <Content Include="images\output.JPG" />
     <Content Include="images\right_arrow.JPG" />
+    <Content Include="images\spacer.gif" />
     <Content Include="Input.aspx" />
     <Content Include="JavaScripts\dFilter.js" />
     <Content Include="JavaScripts\dynamic.js" />
+    <Content Include="JavaScripts\imgSwap.js" />
     <Content Include="JavaScripts\LLscript.js" />
     <Content Include="JavaScripts\popup.js" />
     <Content Include="JavaScripts\utility.js" />
+    <Content Include="Learn.aspx" />
     <Content Include="LLStyles.css" />
     <None Include="Documents\LLHomePgOverview.ppt" />
     <None Include="Documents\LLNew User Orientation.ppt" />
@@ -114,10 +144,12 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Man.aspx" />
     <Content Include="ProcessingBulkSearch.aspx" />
     <Content Include="ProcessingPage.aspx" />
     <Content Include="Search.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Workshop.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -152,8 +184,22 @@
     <Compile Include="Input.aspx.designer.cs">
       <DependentUpon>Input.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Learn.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Learn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Learn.aspx.designer.cs">
+      <DependentUpon>Learn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LLWebPageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Man.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Man.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Man.aspx.designer.cs">
+      <DependentUpon>Man.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProcessingBulkSearch.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +235,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Workshop.aspx.cs">
+      <DependentUpon>Workshop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Workshop.aspx.designer.cs">
+      <DependentUpon>Workshop.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

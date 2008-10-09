@@ -39,7 +39,7 @@ namespace Website
                 this.lbldgTotal.Visible = false;
             }
 
-            this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
+            //this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
         }
 
         protected override void OnInit(EventArgs e)
@@ -395,14 +395,16 @@ namespace Website
                 Session.Add(Global.Parameters.SubmittedFinal, "FINAL");
                 sPathReport = "window.open('" + Global.ProcessingPage.ToString() + "?" + Global.Parameters.LL_ID + "=" + dgi.Cells[1].Text.ToString() + "');";
                 sScript = "<script> " + sPathReport + "</script>";
-                this.RegisterStartupScript("START", sScript);
+                //this.RegisterStartupScript("START", sScript);
+                this.ClientScript.RegisterStartupScript(this.GetType(), "START", sScript);
             }
             if (dgi.Cells[2].Text.ToString() == "Unpublished")
             {
                 Session.Add(Global.Parameters.SubmittedFinal, "SUBMITTEDSEARCH");
                 sPathReport = "window.open('" + Global.ProcessingPage.ToString() + "?" + Global.Parameters.LL_ID + "=" + dgi.Cells[1].Text.ToString() + "');";
                 sScript = "<script> " + sPathReport + "</script>";
-                this.RegisterStartupScript("START", sScript);
+                //this.RegisterStartupScript("START", sScript);
+                this.ClientScript.RegisterStartupScript(this.GetType(), "START", sScript);
             }
             
         }
@@ -462,7 +464,8 @@ namespace Website
 
                 sPathReport = "window.open('" + Global.ProcessingBulkSearch.ToString() + "');";
                 sScript = "<script> " + sPathReport + "</script>";
-                this.RegisterStartupScript("START", sScript);            
+                //this.RegisterStartupScript("START", sScript);
+                this.ClientScript.RegisterStartupScript(this.GetType(), "START", sScript);
             }
             
         }

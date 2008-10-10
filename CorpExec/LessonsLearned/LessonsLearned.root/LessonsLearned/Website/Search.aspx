@@ -28,7 +28,7 @@
   
  	<!-- WELCOME LABEL -->
 	<tr><td>
-     <asp:Label ID="lblWelcome" runat="server" CssClass="fieldLabel"   ></asp:Label>          		
+     <asp:Label ID="lblWelcome" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="85%" ></asp:Label>            		        		
 	</td></tr>  
     </table>
     
@@ -55,7 +55,7 @@
                 <asp:ListBox  SelectionMode="Multiple" ID="lbDiscipline" TabIndex="80" runat="server" DataSource="<%# dvDiscipline %>" DataTextField="NAME" DataValueField="LL_DISCIPLINE_ID" style="Z-INDEX: 1; text-align: left; LEFT: 332px; POSITION: absolute; TOP: 262px" Height="150px" Width="150px" ></asp:ListBox>
                 
                
-		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="570px" style="Z-INDEX: 1; text-align: left; LEFT: 7px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select or un-select multiple items in each box</asp:Label>
+		        <asp:Label ID="Label3" runat="server" CssClass="fieldLabel" Font-Bold="False" Font-Size=Smaller Width="570px" style="Z-INDEX: 1; text-align: left; LEFT: 7px; POSITION: absolute; TOP: 431px">Hold down the ctrl key while clicking with the mouse to select or un-select multiple items in each box</asp:Label>
 		        <asp:linkbutton ID="lnkAdvanced" runat="server"   Text="Advanced search" Width="118px" Height="15px" style="Z-INDEX: 1; text-align: left; LEFT: 588px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
 		        <asp:linkbutton ID="lnkAdvancedHide" runat="server"   Text="Hide advanced" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 588px; POSITION: absolute; TOP: 431px"  ></asp:LinkButton>
 		         
@@ -80,13 +80,17 @@
 		
 				<TR>
 					<TD style="FONT-SIZE: 70%; HEIGHT: 1px" align="left" width="100%" colSpan="2" rowSpan="1">
-					  <asp:button id="btnPrint" tabIndex="20" runat="server"  CssClass="Button"   Width="75px" Height="17px" ToolTip=""   Text="Print Grid" OnClick="btnPrint_Click"/>  
+					  <asp:button id="btnPrint" tabIndex="20" runat="server"  CssClass="Button"   Width="75px" Height="21px" ToolTip=""   Text="Print Grid" OnClick="btnPrint_Click"/>  
 					   <asp:Label ID="lbldgTotal" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="504px" ></asp:Label>
 					</TD>
 					<td>
 					   
 					</td>
 				</TR>
+				<tr>
+				    <td> <br />
+				    </td>
+				</tr>
 				
 				<TR>
 					<TD colSpan="2">

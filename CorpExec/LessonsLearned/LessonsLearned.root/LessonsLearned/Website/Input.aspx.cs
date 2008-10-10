@@ -191,7 +191,8 @@ namespace Website
                     this.txtFirstName.Text = user.FirstName.ToString();
                     this.txtLastName.Text = user.LastName.ToString();
                     //this.txtPhone.Text = user.Phone.ToString();
-                    this.txtPhone.Text = user.Phone.ToString().Substring(user.Phone.ToString().IndexOf("+1") + 3);
+                    if (user.Phone.ToString() != "")
+                    { this.txtPhone.Text = user.Phone.ToString().Substring(user.Phone.ToString().IndexOf("+1") + 3); }
                     lblWelcome.Text = "Welcome " + user.FirstName.ToString() + " " + user.LastName.ToString();
                 }
                 else 
@@ -573,8 +574,9 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please choose a Type or if not there, enter a value in the 'other' box.");
-                        panel1controlsAreValid = false;
+                        //Christian asked to make these fields NOT mandatory, Oct 10, 2008
+                        //ValidationSummary1.AddErrorMessage("Please choose a Type or if not there, enter a value in the 'other' box.");
+                        //panel1controlsAreValid = false;
                     }
 
                     if (ddlImpact.SelectedIndex != 0)
@@ -591,8 +593,9 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please choose a Impact. ");
-                        panel1controlsAreValid = false;
+                        //Christian asked to make these fields NOT mandatory, Oct 10, 2008
+                        //ValidationSummary1.AddErrorMessage("Please choose a Impact. ");
+                        //panel1controlsAreValid = false;
                     }
 
                     if (ddlFrequency.SelectedIndex != 0)
@@ -608,8 +611,9 @@ namespace Website
                     }
                     else
                     {
-                        ValidationSummary1.AddErrorMessage("Please choose a Frequency. ");
-                        panel1controlsAreValid = false;
+                        //Christian asked to make these fields NOT mandatory, Oct 10, 2008
+                       // ValidationSummary1.AddErrorMessage("Please choose a Frequency. ");
+                       // panel1controlsAreValid = false;
                     }
 
                     if (txtRecommendations.Text.ToString() != "")

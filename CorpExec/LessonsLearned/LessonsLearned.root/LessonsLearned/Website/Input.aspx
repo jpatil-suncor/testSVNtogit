@@ -27,6 +27,9 @@ function ValidatorOnLoad() {
 }
 </script>
 
+<!--OUTER CONTAINER TABLE -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 100%">
+<tr><td valign="top">
 
 	<!-- HEADER -->
 	<table class="tableOuter" align="center">
@@ -41,6 +44,9 @@ function ValidatorOnLoad() {
 	</td></tr> 
 	</table> 
     
+ </td></tr>
+ <tr><td valign="top">   
+
 
     <table width="100%" cellspacing=0 style="z-index: 101;  left: 25px; width: 100%; position: absolute; top: 150px; ">
 	    <tr><td class="CellEdit">
@@ -152,20 +158,20 @@ function ValidatorOnLoad() {
              <asp:Label ID="Label14" runat="server" CssClass="fieldLabel" Font-Bold="false"   Width="365px" style="z-index: 101;  left: 188px; position: absolute; top: 675px; " >characters remaining for additional background</asp:Label>
              
              <!-- RIGHT COLUMN -->
-             <asp:Label ID="Label5" runat="server" CssClass="fieldLabel" Font-Bold="True"   Width="125px" style="z-index: 101;  left: 510Px; position: absolute; top: 200px; ">Type:</asp:Label>
+             <asp:Label ID="Label5" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="125px" style="z-index: 101;  left: 510Px; position: absolute; top: 200px; ">Type:</asp:Label>
              <asp:Image ID="imgType" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 630px;  position: absolute; top: 200px; " />               
              <asp:DropDownList ID="ddlType" runat="server" TabIndex="110" Width="125px" style="z-index: 1;  left: 645px; position: absolute; top: 200px; " DataSource="<%# dvType %>" DataTextField="NAME" DataValueField="LL_OCCURRENCE_TYPE_ID"></asp:DropDownList>
              <asp:Label ID="Label22" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="35px" style="z-index: 101;  left: 800px; position: absolute;  top: 200px; " >other:</asp:Label>
              <asp:TextBox ID="txtTypeOther" runat="server"   Height="20px" TabIndex="60" ToolTip="" Width="135px" style="z-index: 101;  left: 835px; position: absolute; top: 200px; " ></asp:TextBox>
              
-             <asp:Label ID="Label6" runat="server" CssClass="fieldLabel" Font-Bold="True"   Width="125px" style="z-index: 101;  left: 510px; position: absolute; top: 225px; ">Priority:</asp:Label> 
+             <asp:Label ID="Label6" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="125px" style="z-index: 101;  left: 510px; position: absolute; top: 225px; ">Priority:</asp:Label> 
              <asp:Image ID="imgImpact" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 630px;  position: absolute; top: 225px; " />               
              <asp:DropDownList ID="ddlImpact" runat="server" TabIndex="120" Width="125px" style="z-index: 1;  left: 645px; position: absolute;  top: 225px; " DataSource="<%# dvImpact %>" DataTextField="NAME" DataValueField="LL_OCCURRENCE_IMPACT_ID" Font-Underline="False" ></asp:DropDownList>
              <asp:Label ID="Label19" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="36px" style="z-index: 101;  left: 775px; position: absolute; text-align: right; top: 225px; ">Impact:</asp:Label> 
              <asp:Image ID="imgFinImpact" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 820px;  position: absolute; top: 225px; " />               
              <asp:DropDownList ID="ddlFinancialImpact" runat="server" TabIndex="120" Width="100px" style="z-index: 1;  left: 835px; position: absolute;  top: 225px; " DataSource="<%# dvFinancialImpact %>" DataTextField="NAME" DataValueField="LL_FINANCIAL_IMPACT_ID" Font-Underline="False" ></asp:DropDownList>
              
-             <asp:Label ID="Label7" runat="server" CssClass="fieldLabel" Font-Bold="True"   Width="125px" style="z-index: 101;  left: 510px;  position: absolute;  top: 250px; ">Frequency:</asp:Label>
+             <asp:Label ID="Label7" runat="server" CssClass="fieldLabel" Font-Bold="False"   Width="125px" style="z-index: 101;  left: 510px;  position: absolute;  top: 250px; ">Frequency:</asp:Label>
              <asp:Image ID="imgFrequency" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 101;  left: 630px;  position: absolute; top: 250px; " />               
              <asp:DropDownList ID="ddlFrequency" runat="server" TabIndex="130" Width="145px" style="z-index: 1;  left: 645px; position: absolute;  top: 250px; " DataSource="<%# dvFrequency %>" DataTextField="NAME" DataValueField="LL_OCCURRENCE_FREQUENCY_ID"></asp:DropDownList>
             
@@ -276,20 +282,20 @@ function ValidatorOnLoad() {
 	      
 	</asp:panel>
 	
-	
+</td></tr>	
+<tr><td style="height: 173px">
 
 	<!-- Navigation table -->
-  <div class="centerIt" style="position:absolute; top:850px; left: 150px;">
-<table class="tableNav" cellpadding="0" cellspacing="0">
-<tr>
-  <td>
-            <a href="Input.aspx" id="A1" title="Input" runat="server" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
+  <div class="centerIt" style="z-index: 101; position: absolute; top: 850px; margin-left:auto; margin-right:auto;">
+    <table class="tableNav" cellpadding="0" cellspacing="0">
+    <tr>
+            <td><a href="Input.aspx" id="A1" title="Input" runat="server" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
             <img src="images/buttNavOff_02.gif" name="low2" alt="Input"/></a></td>
 
             <td><a href="Search.aspx" id="A2" onMouseOver="imgOn('low3')" onMouseOut="imgOff('low3')">
             <img src="images/buttNavOff_03.gif" name="low3" alt="Search"/></a></td>
 
-            <td><a href="Man.aspx" onMouseOver="imgOn('low4')" onMouseOut="imgOff('low4')">
+            <td style="width: 226px"><a href="Man.aspx" onMouseOver="imgOn('low4')" onMouseOut="imgOff('low4')">
             <img src="images/buttNavOff_04.gif" name="low4" alt="Manuals and Guides"/></a></td>
             </tr>
             <tr>
@@ -299,13 +305,15 @@ function ValidatorOnLoad() {
             <td><a href="mailto:ospll@petro-canada.ca?subject=Lessons Learned Question" onMouseOver="imgOn('low6')" onMouseOut="imgOff('low6')">
             <img src="images/buttNavOff_06.gif" name="low6" alt="Contact"/></a></td>
             
-            <td><a href="Learn.aspx" onMouseOver="imgOn('low7')" onMouseOut="imgOff('low7')">
+            <td style="width: 226px"><a href="Learn.aspx" onMouseOver="imgOn('low7')" onMouseOut="imgOff('low7')">
             <img src="images/buttNavOff_07.gif" name="low7" alt="Learn More"/></a></td>
       </tr>                          
 
     </table>
 </div>
 
+</td> </tr>
+</table>
 	
 	
 </form>

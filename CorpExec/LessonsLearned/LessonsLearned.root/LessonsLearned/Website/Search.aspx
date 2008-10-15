@@ -29,16 +29,20 @@
  	<!-- WELCOME LABEL -->
 	<tr><td>
      <asp:Label ID="lblWelcome" runat="server" CssClass="fieldLabel" Font-Bold="True" Font-Size="85%" ></asp:Label>            		        		
+     <br />
+     <br />
+     <br />
 	</td></tr>  
+	
     </table>
-    
+                
 		         <a href="http://www.googlefont.com" ><asp:Image ID="imgTitle" runat="server" ImageUrl="~/Images/LessonsLearnedSearch.gif" style="Z-INDEX: 113; text-align: center; LEFT: 357px; POSITION: absolute; TOP: 120px"   /></a>
 		         <asp:Image ID="imgSearch" runat="server" ImageUrl="~/Images/info.gif" style="z-index: 999;  left: 338px; position: absolute;  top: 171px; "  />	 
 		         <asp:TextBox ID="txtSearch" runat="server"   Height="20px" TabIndex="10" ToolTip="" Width="345px" style="Z-INDEX: 113; text-align: left; LEFT: 355px; POSITION: absolute; TOP: 171px" OnTextChanged="txtSearch_TextChanged"></asp:TextBox>
 		         <asp:linkbutton ID="lnkFilter" runat="server"   Text="Filter search" Width="118px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 703px; POSITION: absolute; TOP: 171px"  ></asp:LinkButton>
 		         <asp:linkbutton ID="lnkHideFilter" runat="server"   Text="Hide filter" Visible=false Width="120px" Height="15px" style="Z-INDEX: 113; text-align: left; LEFT: 703px; POSITION: absolute; TOP: 171px"  ></asp:LinkButton>
 		         <asp:button id="btnSearch" tabIndex="20" runat="server"  CssClass="Button"   Width="75px" Height="22px" ToolTip=""  style="Z-INDEX: 113; text-align: center; LEFT: 450px; POSITION: absolute; TOP: 195px" Text="Search"/>
-		          <asp:button id="ButtonReset" tabIndex="30" runat="server"  CssClass="Button"   Width="75px" Height="22px" ToolTip=""  Text="Reset" style="Z-INDEX: 113; text-align: center; LEFT: 525px; POSITION: absolute; TOP: 195px"/>  
+		         <asp:button id="ButtonReset" tabIndex="30" runat="server"  CssClass="Button"   Width="75px" Height="22px" ToolTip=""  Text="Reset" style="Z-INDEX: 113; text-align: center; LEFT: 525px; POSITION: absolute; TOP: 195px"/>  
 		          
     
 		   <asp:panel id="panel1" Visible="true" runat=server >      &nbsp;

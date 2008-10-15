@@ -42,23 +42,24 @@
 	</td></tr>    
         <tr>
 		     <td width="25px">&nbsp;</td>
-            <td>
+                <td>
                 Workshop information and workbooks 
                 </td>
-				<td width="25px">&nbsp;</td>
+			<td width="25px">&nbsp;</td>
         </tr>
+        <tr><td colspan="3">&nbsp;</td></tr>
          <tr>
 		 <td>&nbsp;</td>
              <td colspan="2">
                  <ul>
-                     <img src="images/bullet.gif"><a href="Documents/LLWorkshopFinalKit.ppt">PowerPoint Workshop Kit</a><br/>
-                     <img src="images/bullet.gif"><a href="Documents/OSP LL FINAL MS EXCEL WORKBOOK .xls">Excel Workbook/templates</a><br/>
+                     <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012c180">PowerPoint Workshop Kit</a><br/>
+                     <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012c181">Excel Workbook/templates</a><br/>
                      
                  </ul>
              </td>			 
          </tr> 
     </table>
-    <br/><br/><br/><br/>
+    <br/><br/>
 	</td></tr>
  	
 	<tr><td>

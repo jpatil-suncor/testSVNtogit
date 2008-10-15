@@ -53,11 +53,12 @@
                      <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012be39">Lessons Learned Quick Reference Guide.pdf </a><br/>
                      <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012be3a">Lessons Learned Process Map.pdf </a><br/>
                      <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012be3b">Lessons Learned User Manual.pdf </a><br/>                     
+                     <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012c17f">Lessons Learned New User Orientation.ppt  </a><br/> 
                  </ul>
              </td>			 
          </tr> 
     </table>
-    <br/><br/><br/><br/>
+    <br/><br/>
 	</td></tr>
  	
 	<tr><td>

@@ -286,16 +286,19 @@ function ValidatorOnLoad() {
 <tr><td style="height: 173px">
 
 	<!-- Navigation table -->
-  <div class="centerIt" style="z-index: 101; position: absolute; top: 850px; margin-left:auto; margin-right:auto;">
-    <table class="tableNav" cellpadding="0" cellspacing="0">
-    <tr>
-            <td><a href="Input.aspx" id="A1" title="Input" runat="server" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
+ <asp:panel id="panelNav" Visible="true" runat=server HorizontalAlign="Center" width="100%" style="z-index: 101; position:absolute; top: 850px; " >
+    
+
+<table class="tableNav" cellpadding="0" cellspacing="0" >
+<tr>
+  <td>
+            <a href="Input.aspx" id="A1" title="Input" runat="server" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
             <img src="images/buttNavOff_02.gif" name="low2" alt="Input"/></a></td>
 
             <td><a href="Search.aspx" id="A2" onMouseOver="imgOn('low3')" onMouseOut="imgOff('low3')">
             <img src="images/buttNavOff_03.gif" name="low3" alt="Search"/></a></td>
 
-            <td style="width: 226px"><a href="Man.aspx" onMouseOver="imgOn('low4')" onMouseOut="imgOff('low4')">
+            <td><a href="Man.aspx" onMouseOver="imgOn('low4')" onMouseOut="imgOff('low4')">
             <img src="images/buttNavOff_04.gif" name="low4" alt="Manuals and Guides"/></a></td>
             </tr>
             <tr>
@@ -305,12 +308,13 @@ function ValidatorOnLoad() {
             <td><a href="mailto:ospll@petro-canada.ca?subject=Lessons Learned Question" onMouseOver="imgOn('low6')" onMouseOut="imgOff('low6')">
             <img src="images/buttNavOff_06.gif" name="low6" alt="Contact"/></a></td>
             
-            <td style="width: 226px"><a href="Learn.aspx" onMouseOver="imgOn('low7')" onMouseOut="imgOff('low7')">
+            <td><a href="Learn.aspx" onMouseOver="imgOn('low7')" onMouseOut="imgOff('low7')">
             <img src="images/buttNavOff_07.gif" name="low7" alt="Learn More"/></a></td>
       </tr>                          
 
     </table>
-</div>
+</asp:panel>
+
 
 </td> </tr>
 </table>

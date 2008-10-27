@@ -52,8 +52,8 @@
 		 <td>&nbsp;</td>
              <td colspan="2">
                  <ul>
-                     <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012c180">PowerPoint Workshop Kit</a><br/>
-                     <img src="images/bullet.gif"><a href="http://pca205:7001/webtop/drl/objectId/09001f988012c181">Excel Workbook/templates</a><br/>
+                     <img src="images/bullet.gif"><a href="http://pcaportal.pcacorp.net/pls/portal/portal.show_doc_link?p_nav=Y&amp;p_docbase=FortHills&amp;p_docid=09001f988012c180">PowerPoint Workshop Kit</a><br/>
+                     <img src="images/bullet.gif"><a href="http://pcaportal.pcacorp.net/pls/portal/portal.show_doc_link?p_nav=Y&amp;p_docbase=FortHills&amp;p_docid=09001f988012c181">Excel Workbook/templates</a><br/>
                      
                  </ul>
              </td>			 

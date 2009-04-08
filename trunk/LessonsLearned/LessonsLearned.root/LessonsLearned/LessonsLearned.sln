@@ -13,12 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deploy", "Deploy\Deploy.csp
 		Release.AspNetCompiler.Debug = "False"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libraries", "Libraries\Libraries.csproj", "{0B31A34B-8F47-4D27-B4C1-49815AE4F763}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{A0E10392-0B6A-4C6A-8565-769A423E7982}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.Debug = "True"
@@ -26,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -39,10 +37,6 @@ Global
 		{5EB35422-16C1-4859-AF28-55FBCD319919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EB35422-16C1-4859-AF28-55FBCD319919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EB35422-16C1-4859-AF28-55FBCD319919}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B31A34B-8F47-4D27-B4C1-49815AE4F763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B31A34B-8F47-4D27-B4C1-49815AE4F763}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B31A34B-8F47-4D27-B4C1-49815AE4F763}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B31A34B-8F47-4D27-B4C1-49815AE4F763}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0E10392-0B6A-4C6A-8565-769A423E7982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0E10392-0B6A-4C6A-8565-769A423E7982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0E10392-0B6A-4C6A-8565-769A423E7982}.Release|Any CPU.ActiveCfg = Release|Any CPU

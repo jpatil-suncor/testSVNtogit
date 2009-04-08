@@ -40,8 +40,8 @@ namespace Website
         {
             // this.ddlSBU.SelectedIndexChanged += new EventHandler(ddlSBU_SelectedIndexChanged);
             // this.ddlBU.SelectedIndexChanged += new EventHandler(ddlBU_SelectedIndexChanged);
-           //this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
-            
+            //this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
+
             //this.dgSearch.SortCommand += new DataGridSortCommandEventHandler(this.dgSearch_SortCommand);
         }
 
@@ -84,9 +84,11 @@ namespace Website
                 {
                     try
                     {
+                        
                         //copy file to webserver
 
                         String ExceltempFile = System.IO.Path.GetDirectoryName(System.IO.Path.GetTempFileName().ToString());
+                       // String ExceltempFile2 = "\\webstore1\\tier1_web2_dev$\\ll\\Reports'";
                         ExceltempFile = ExceltempFile + "\\" + ExcelFile.FileName.ToString();
                         ExcelFile.SaveAs(ExceltempFile);
 
@@ -94,7 +96,8 @@ namespace Website
                         OleDbConnection dbConn = new OleDbConnection(connectionString);
 
                         dbConn.Open();
-                        String sql = "Select * FROM " + ConfigurationManager.AppSettings["Worksheet"];
+                        //String sql = "Select * FROM " + ConfigurationManager.AppSettings["Upload"];
+                        String sql = "Select * FROM [Upload$] ";
                         OleDbCommand cmd = new OleDbCommand(sql, dbConn);
                         DataSet ds = new DataSet();
                         OleDbDataAdapter da = new OleDbDataAdapter(cmd);
@@ -108,31 +111,84 @@ namespace Website
                             DataRow x = dr;
                             PotentialLesson ll = new PotentialLesson();
                             ll.CurrentUser = LoginName;
-                            ll.StatusId = 1; //This is to be in 'submitted' mode.
+                            ll.StatusId = 2; //This is to be in 'pending' mode.
                             ll.UserName = LoginName;
 
                             if ((dr["Lesson Learned Title"].ToString() != "") && (dr["LESSON LEARNED STATEMENT"].ToString() != ""))
                             {
                                 try
                                 {
-                                    String com = "Number: " + dr["NUMBER"].ToString() + ", ";
-                                    com = com + "Originator: " + dr["ORIGINATOR"].ToString() + ", ";
-                                    com = com + "Priority: " + dr["PRIORITY"].ToString() + ", ";
-                                    com = com + "Impact: " + dr["IMPACT"].ToString() + ", ";
-                                    com = com + "Type: " + dr["TYPE"].ToString() + ", ";
-                                    com = com + "Frequency: " + dr["FREQUENCY"].ToString() + ", ";
-                                    ll.Comments = com.ToString();
-                                    ll.Title = dr["Lesson Learned Title"].ToString();
+                                    ll.Title = dr["LESSON LEARNED TITLE"].ToString();
                                     ll.Statement = dr["LESSON LEARNED STATEMENT"].ToString();
                                     ll.Background = dr["ADDITIONAL BACKGROUND"].ToString();
                                     ll.Response = dr["RECOMMENDATIONS"].ToString();
                                     ll.Reference = dr["REFERENCES"].ToString();
-                                    ll.ImportfromExcel = "Y";
+                                    ll.TypeId = 1;
+                                    if (dr["CATEGORY"].ToString() != "")
+                                    {
+                                        ll.CategoryId = System.Decimal.Parse(dr["CATEGORY"].ToString());
+                                    }
+                                    if (dr["PRIORITY"].ToString() != "")
+                                    {
+                                        ll.ImpactId = System.Decimal.Parse(dr["PRIORITY"].ToString());
+                                    } // Priority on the Input Screen }
+                                    if (dr["IMPACT"].ToString() != "")
+                                    {
+                                        ll.FinancialImpactId = System.Decimal.Parse(dr["IMPACT"].ToString());
+                                    }//Impact on the Input Screen }
+                                    if (dr["FREQUENCY"].ToString() != "")
+                                    {
+                                        ll.FrequencyId = System.Decimal.Parse(dr["FREQUENCY"].ToString());
+                                    }
+                                    if (dr["SBU"].ToString() != "")
+                                    {
+                                        ll.SBUId = System.Decimal.Parse(dr["SBU"].ToString());
+                                    }
+                                    if (dr["BU"].ToString() != "")
+                                    {
+                                        ll.BUId = System.Decimal.Parse(dr["BU"].ToString());
+                                    }
+                                    if (dr["Project"].ToString() != "")
+                                    {
+                                        ll.ProjectId = System.Decimal.Parse(dr["Project"].ToString());
+                                    }
+
+                                    //RPP April 8, 2009
+                                    //Making this Y will imput the data to table LL_POTENTIAL_INPUT, 
+                                    //While setting it to N will input the data to table LL_POTENTIAL
+                                    ll.ImportfromExcel = "N"; 
 
                                     ll.Save();
                                     Final_ll = ll.LLId.ToString();
+                                    char[] separator = new char[] { ',' };
+
+                                    if (dr["Phases"].ToString() != "")
+                                    {
+                                        String phases = dr["Phases"].ToString().TrimEnd(',');
+                                        string[] aPhases = phases.Split(separator);
+
+                                        foreach (string s in aPhases)
+                                        {
+                                            ll.StageId = System.Decimal.Parse(s.ToString());
+                                            ll.SaveStageInfo();
+                                        }
+                                    }
+
+                                    if (dr["Processes"].ToString() != "")
+                                    {
+                                        String processes = dr["Processes"].ToString().TrimEnd(',');
+                                        String[] aProcesses = processes.Split(separator);
+
+                                        foreach (string s in aProcesses)
+                                        {
+                                            ll.SubjectMatterId = decimal.Parse(s.ToString());
+                                            ll.SaveSubjectMatterInfo();
+                                        }
+                                    }
                                     row_counter += 1;
+
                                 }
+
                                 catch (SystemException ex)
                                 {
                                     throw new Backend.LLException("Failed to save document.", ex);
@@ -146,6 +202,7 @@ namespace Website
                             //save document to the database
                             UploadtoDocumentum("Excel Input file", ExceltempFile.ToString(), ExcelFile.FileName.ToString(), Final_ll.ToString());
                             documentumFilename = ConfigurationManager.AppSettings["DocumentumCabinet"] + "/" + Final_ll.ToString() + "/" + ExcelFile.FileName.ToString();
+                            //documentumFilename = ExceltempFile.ToString(); //rpp
                             this.lblMsg.Text = "You have successfully imported the Excel file. You have imported " + row_counter.ToString() + " rows. Your file has been saved in Documentum in the folder " + documentumFilename.ToString() + ".";
 
                             if (this.cbGrid.Checked)
@@ -160,18 +217,12 @@ namespace Website
                         {
                             this.lblMsg.Text = "There was a problem with your upload, 0 rows were imported into the database. Please ensure the template has not been modified.";
                         }
-
-
-                        
-                        
-
                         counter = "Y";
                     }
                     catch (SystemException ex)
                     {
                         throw new Backend.LLException("Failed to save document.", ex);
                     }
-
                 }
             }
         }

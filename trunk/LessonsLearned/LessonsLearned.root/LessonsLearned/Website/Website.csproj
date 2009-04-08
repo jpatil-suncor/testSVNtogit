@@ -34,6 +34,11 @@
     <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Documentum.Interop.DFC, Version=5.3.0.316, Culture=neutral, PublicKeyToken=d8533ca61944ee9d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Documentum.Interop.DFC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Fluent.MultiLineTextBoxValidator, Version=1.0.1504.28064, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\Fluent.MultiLineTextBoxValidator.dll</HintPath>
@@ -44,11 +49,11 @@
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.0.2931.18465, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Program Files\Microsoft Application Blocks for .NET\Exception Management\Code\CS\Microsoft.ApplicationBlocks.ExceptionManagement\bin\Debug\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=1.0.2931.18464, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Program Files\Microsoft Application Blocks for .NET\Exception Management\Code\CS\Microsoft.ApplicationBlocks.ExceptionManagement\bin\Debug\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+      <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="microsoft.web.ui.webcontrols, Version=1.0.2.226, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <SpecificVersion>False</SpecificVersion>
@@ -96,7 +101,6 @@
     <Content Include="images\buttNavOn_05.gif" />
     <Content Include="images\buttNavOn_06.gif" />
     <Content Include="images\buttNavOn_07.gif" />
-    <Content Include="images\central_processing.bmp" />
     <Content Include="images\central_processing.bmp.jpg" />
     <Content Include="images\hdr_contact.jpg" />
     <Content Include="images\hdr_excel.jpg" />
@@ -114,6 +118,7 @@
     <Content Include="images\LessonsLearnedSearch.gif" />
     <Content Include="images\ll_whole_pic.JPG" />
     <Content Include="images\output.JPG" />
+    <Content Include="images\progressSearch.gif" />
     <Content Include="images\right_arrow.JPG" />
     <Content Include="images\spacer.gif" />
     <Content Include="Input.aspx" />
@@ -307,7 +312,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1934</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

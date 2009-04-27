@@ -130,6 +130,7 @@
     <Content Include="JavaScripts\utility.js" />
     <Content Include="Learn.aspx" />
     <Content Include="LLStyles.css" />
+    <None Include="Documents\Lessons Corporate Template FINALWeb Version.xls" />
     <None Include="Documents\LLHomePgOverview.ppt" />
     <None Include="Documents\LLNew User Orientation.ppt" />
     <None Include="Documents\LLWorkshopFinalKit.ppt" />

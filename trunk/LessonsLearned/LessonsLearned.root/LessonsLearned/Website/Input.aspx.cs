@@ -51,7 +51,7 @@ namespace Website
             {
                 this.exceltemplate.Visible = true;
             }
-
+            
             //this.lblTitle.Text = ConfigurationManager.AppSettings["TitleMSG"].ToString();
             
 
@@ -82,8 +82,8 @@ namespace Website
             this.imgReference.Attributes.Add("onmouseover", "showPopup('reference', event);");
             this.imgReference.Attributes.Add("onmouseout", "hideCurrentPopup();");
 
-            this.imgHelp.Attributes.Add("onmouseover", "showPopup('help', event);");
-            this.imgHelp.Attributes.Add("onmouseout", "hideCurrentPopup();");
+            //this.imgHelp.Attributes.Add("onmouseover", "showPopup('help', event);");
+            //this.imgHelp.Attributes.Add("onmouseout", "hideCurrentPopup();");
 
             this.imgFileUpload.Attributes.Add("onmouseover", "showPopup('fileupload', event);");
             this.imgFileUpload.Attributes.Add("onmouseout", "hideCurrentPopup();");
@@ -330,7 +330,7 @@ namespace Website
                 this.panel1.Visible = true;
                 this.btnBack.Enabled = false;
                 this.btnNext.Enabled = true;
-
+                this.panelNav.Style.Value = "z-index: 101; position:absolute; top: 850px; ";
                 //if (Session[Global.Parameters.File3].ToString() != "")
                 //{
                 //    FileUpload3 = (FileUpload)Session[Global.Parameters.File3];
@@ -350,6 +350,9 @@ namespace Website
                 this.btnNext.Enabled = false;
                 this.btnSave.Enabled = true;
 
+                this.panelNav.Style.Value = "z-index: 101; position:absolute; top: 1450px; ";
+
+ 
                 //if (FileUpload3.HasFile)
                 //{
                 //    //store this file in session as we lose it going from page to page

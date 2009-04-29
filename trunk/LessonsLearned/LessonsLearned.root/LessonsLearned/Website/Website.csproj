@@ -340,6 +340,11 @@
     <Content Include="App_LocalResources\Search.aspx.fr.resx">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="images\bg_home_osp.jpg" />
+    <Content Include="images\bg_learn_osp.jpg" />
+    <Content Include="images\bg_man.jpg" />
+    <Content Include="images\bg_man_osp.jpg" />
+    <Content Include="images\bg_work_osp.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reports\" />

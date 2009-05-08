@@ -10,6 +10,7 @@ low2off.src = "images/buttNavOff_02.gif";
 }
 
 if (document.images) {
+alert('insdide low3');
 low3on = new Image(); // Active images
 low3on.src = "images/buttNavOn_03.gif";
 
@@ -49,14 +50,16 @@ low7off = new Image(); // Inactive images
 low7off.src = "images/buttNavOff_07.gif";
 }
 function imgOn(imgName) {
-
+  alert();
 if (document.images) {
+alert('inside imgOn');
 document[imgName].src = eval(imgName + "on.src");
 }
 }
 
 function imgOff(imgName) {
 if (document.images) {
+alert('inside imgOff');
 document[imgName].src = eval(imgName + "off.src");
 }
 }

@@ -65,27 +65,34 @@
 	<!-- Navigation table -->
    <div class="centerIt">
 <table class="tableNav" cellpadding="0" cellspacing="0">
-<tr>
-  <td>
-            <a href="Input.aspx" id="A1" title="Input" runat="server" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
+        <tr>
+            <td>
+            <a href="Input.aspx" id="A1" title="Input" onmouseover="document.low2.src='images/buttNavOn_02.gif'" onmouseout="document.low2.src='images/buttNavOff_02.gif'">
             <img src="images/buttNavOff_02.gif" name="low2" alt="Input"/></a></td>
+            
+            <!-- 
+             <a href="Input.aspx" id="A1" title="Input" onMouseOver="imgOn('low2')" onMouseOut="imgOff('low2')">
+            <img src="images/buttNavOff_02.gif" name="low2" alt="Input"/></a></td>
+             -->
+            <td>
+                <a href="Search.aspx" id="A2" onmouseover="document.low3.src='images/buttNavOn_03.gif'" onmouseout="document.low3.src='images/buttNavOff_03.gif'">
+                 <img src="images/buttNavOff_03.gif" name="low3" alt="Search"/>
+                </a>
+            </td>
 
-            <td><a href="Search.aspx" id="A2" onMouseOver="imgOn('low3')" onMouseOut="imgOff('low3')">
-            <img src="images/buttNavOff_03.gif" name="low3" alt="Search"/></a></td>
-
-            <td><a href="Man.aspx" onMouseOver="imgOn('low4')" onMouseOut="imgOff('low4')">
+            <td><a href="Man.aspx" onmouseover="document.low4.src='images/buttNavOn_04.gif'" onmouseout="document.low4.src='images/buttNavOff_04.gif'" > 
             <img src="images/buttNavOff_04.gif" name="low4" alt="Manuals and Guides"/></a></td>
-            </tr>
-            <tr>
-            <td><a href="Workshop.aspx" onMouseOver="imgOn('low5')" onMouseOut="imgOff('low5')">
+        </tr>
+        <tr>
+            <td><a href="Workshop.aspx" onmouseover="document.low5.src='images/buttNavOn_05.gif'" onmouseout="document.low5.src='images/buttNavOff_05.gif'" >
             <img src="images/buttNavOff_05.gif" name="low5" alt="Workshop"/></a></td>
 
-            <td><a href="mailto:ospll@petro-canada.ca?subject=Lessons Learned Question" onMouseOver="imgOn('low6')" onMouseOut="imgOff('low6')">
+            <td><a href="mailto:ospll@petro-canada.ca?subject=Lessons Learned Question" onmouseover="document.low6.src='images/buttNavOn_06.gif'" onmouseout="document.low6.src='images/buttNavOff_06.gif'" >
             <img src="images/buttNavOff_06.gif" name="low6" alt="Contact"/></a></td>
             
-            <td><a href="Learn.aspx" onMouseOver="imgOn('low7')" onMouseOut="imgOff('low7')">
+            <td><a href="Learn.aspx" onmouseover="document.low7.src='images/buttNavOn_07.gif'" onmouseout="document.low7.src='images/buttNavOff_07.gif'">
             <img src="images/buttNavOff_07.gif" name="low7" alt="Learn More"/></a></td>
-      </tr>                          
+         </tr>   
 
     </table>
 </div>

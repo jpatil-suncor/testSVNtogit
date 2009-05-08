@@ -39,6 +39,7 @@ namespace Website
 
         private void InitializeComponent()
         {
+            
             //this.imgInput.Attributes.Add("onmouseover", "showPopup('input', event);");
             //this.imgInput.Attributes.Add("onmouseout", "hideCurrentPopup();");
             //this.imgCentral.Attributes.Add("onmouseover", "showPopup('central', event);");

@@ -243,6 +243,13 @@
     <Compile Include="SecurityWebPageBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="test.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Web References\EAuthWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -345,6 +352,7 @@
     <Content Include="images\bg_man.jpg" />
     <Content Include="images\bg_man_osp.jpg" />
     <Content Include="images\bg_work_osp.jpg" />
+    <Content Include="test.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Reports\" />

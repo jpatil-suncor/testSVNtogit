@@ -758,12 +758,17 @@ namespace Website
         public void UploadtoDocumentum(string description, string filewithpath, string title, string llID)
         {
             ProactDocumentum doc = new ProactDocumentum();
-
             try
             {
-                doc.Domain = ConfigurationManager.AppSettings["UserDomain"];
-                doc.UserName = ConfigurationManager.AppSettings["DocumentumUser"];
-                doc.Password = ConfigurationManager.AppSettings["DocumentumUserPassword"];
+                if (ConfigurationManager.AppSettings["Documentum6_5"].ToString() == "False")
+                {
+                    doc.Domain = ConfigurationManager.AppSettings["UserDomain"];
+                    doc.UserName = ConfigurationManager.AppSettings["DocumentumUser"];
+                    doc.Password = ConfigurationManager.AppSettings["DocumentumUserPassword"];
+                    doc.Documentum6_5 = false;
+                }
+                else { doc.Documentum6_5 = true; }
+                
                 doc.SetLogin();
 
                 doc.FileDescription = description;
@@ -799,35 +804,7 @@ namespace Website
             }
 
         }
-
-        //public Boolean void VerifyHazardousCharacters(String input)
-        //{
-        //    string x = "|,&,;,$,%,@,\',\",<>,(),+,CR,LF,\\";
-        //    Boolean clean = true;
-        //    if (input.IndexOfAny(x.ToCharArray()) > 0) 
-        //    {
-        //        clean = false;
-        //    }
-
-        //    return clean;
-        //}
-
-
-        //String[] array = new String[15];
-        //array[0] = "|";
-        //array[1] = "&";
-        //array[2] = ";";
-        //array[3] = "$";
-        //array[4] = "%";
-        //array[5] = "@";
-        //array[6] = "\'";
-        //array[7] = "\"";
-        //array[8] = "<>";
-        //array[9] = "()";
-        //array[10] = "+";
-        //array[11] = "CR";
-        //array[12] = "LF";
-        //array[13] = "\\";
+               
     }
 
 

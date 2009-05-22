@@ -38,6 +38,50 @@
       <HintPath>..\Libraries\Documentum.Interop.DFC.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Bpm, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Bpm.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.CI, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.CI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Collaboration, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Core, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.DataModel.Shared, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.DataModel.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Runtime, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Bpm, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Bpm.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.CI, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.CI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Collaboration, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Core, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Emc.Documentum.FS.Services.Search, Version=6.5.0.118, Culture=neutral, PublicKeyToken=f7c256ad97a54f3d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Emc.Documentum.FS.Services.Search.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=1.0.2931.18465, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
@@ -53,6 +97,10 @@
     <Reference Include="PetroCanada.CorpExec.Documentum, Version=1.0.2671.28018, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\PetroCanada.CorpExec.Documentum.dll</HintPath>
+    </Reference>
+    <Reference Include="PetroCanada.CorpSoln.Data.Dctm, Version=6.5.1.1005, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\PetroCanada.CorpSoln.Data.Dctm.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

@@ -364,7 +364,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1803</DevelopmentServerPort>
+          <DevelopmentServerPort>2244</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost/LessonsLearned</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

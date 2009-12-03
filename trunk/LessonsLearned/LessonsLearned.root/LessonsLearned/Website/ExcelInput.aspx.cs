@@ -200,10 +200,14 @@ namespace Website
                         if (row_counter > 0)
                         {
                             //save document to the database
-                            UploadtoDocumentum("Excel Input file", ExceltempFile.ToString(), ExcelFile.FileName.ToString(), Final_ll.ToString());
+                            //RPP Oct 15, 2009 commented out due to Documentum being de-commissioned
+                            //UploadtoDocumentum("Excel Input file", ExceltempFile.ToString(), ExcelFile.FileName.ToString(), Final_ll.ToString());
                             documentumFilename = ConfigurationManager.AppSettings["DocumentumCabinet"] + "/" + Final_ll.ToString() + "/" + ExcelFile.FileName.ToString();
                             //documentumFilename = ExceltempFile.ToString(); //rpp
-                            this.lblMsg.Text = "You have successfully imported the Excel file. You have imported " + row_counter.ToString() + " rows. Your file has been saved in Documentum in the folder " + documentumFilename.ToString() + ".";
+
+                            //RPP Oct 15, 2009 commented out due to Documentum being de-commissioned
+                            //this.lblMsg.Text = "You have successfully imported the Excel file. You have imported " + row_counter.ToString() + " rows. Your file has been saved in Documentum in the folder " + documentumFilename.ToString() + ".";
+                            this.lblMsg.Text = "You have successfully imported the Excel file. You have imported " + row_counter.ToString() + " rows.";
 
                             if (this.cbGrid.Checked)
                             {

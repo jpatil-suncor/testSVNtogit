@@ -348,7 +348,8 @@ namespace Website
                 this.panel2.Visible = true;
                 this.btnBack.Enabled = true;
                 this.btnNext.Enabled = false;
-                this.btnSave.Enabled = true;
+                this.btnSave.Enabled = false;
+                
 
                 this.panelNav.Style.Value = "z-index: 101; position:absolute; top: 1450px; ";
 
@@ -805,7 +806,7 @@ namespace Website
                         this.panel1.Visible = true;
                         this.btnNext.Enabled = true;
                         this.btnBack.Enabled = false;
-                        this.btnSave.Enabled = true;
+                        this.btnSave.Enabled = false;
                         this.panel2.Visible = false;
                     }
                 }
